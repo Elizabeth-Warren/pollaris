@@ -1,0 +1,113 @@
+.ABbadge {
+  width: 60px;
+  height: 20px;
+}
+
+form input:focus {
+  border: 1px solid #232444 !important;
+}
+
+:root {
+  --cyan: #397AAC;
+  --liberty: #B7E4CF;
+  --liberty-light: #E3F4EC;
+  --red: #B61B28;
+  --body-color: #171717;
+  --white: #FFFFFF;
+  --black: #000000;
+  --navy: #232444;
+  --navy-light: #575993;
+  --gray-dark: #585858;
+  --gray: #D8D8D8;
+  --gray-light: #E2E2E2;
+  --off-white: #f7f7f7;
+
+  /* Colors */
+
+  --color-primary-brand: var(--navy);
+
+  --color-text: var(--navy);
+
+  --color-secondaryText: var(--gray-dark);
+
+  --color-error: var(--red);
+
+  --color-background: var(--white);
+
+  --color-subtle-background: var(--off-white);
+
+  --color-success: var(--liberty);
+
+  --color-link: var(--cyan);
+
+
+  /* Form options */
+
+  --form-padding: 12px;
+
+  --border-radius: 0px;
+
+
+  /* Border around entire form */
+
+  --form-border: 2px solid var(--navy);
+
+
+  /* Form header and footer areas */
+
+  --form-header-footer-background: var(--white);
+
+  --form-header-footer-border-color: #E6E9ED;
+
+
+  /* Advance button: continue, donate, etc. */
+
+  --advance-button-background-color: var(--color-primary-brand);
+
+  --advance-button-color: var(--white);
+
+  --advance-button-border: 0;
+
+  --advance-button-font-weight: bold;
+
+  --advance-button-text-transform: none;
+
+  --advance-button-font-size: 1rem;
+
+
+  /* Selectable buttons: amounts, recurring, etc. */
+
+  --select-button-color-text: var(--navy);
+
+  --select-button-color-background: var(--off-white);
+  --select-button-border: 0;
+  --select-button-font-weight: bold;
+
+  --select-button-text-transform: none;
+
+  --select-button-font-size: 1rem;
+
+  --select-button-selected-color-text: #FFF;
+
+  --select-button-selected-color-background: var(--color-primary-brand);
+
+  --select-button-selected-border: 0;
+
+
+
+  /* Input fields */
+
+  --input-background-color: var(--white);
+
+  --input-border-size: 1px;
+
+  --input-border-color: var(--color-primary-brand);
+
+  --input-border-focus-color: var(--color-primary-brand);
+
+  --input-color: var(--color-text);
+
+  --input-label-color: var(--color-primary-brand);
+
+  --input-color-placeholders: var(--navy);
+}

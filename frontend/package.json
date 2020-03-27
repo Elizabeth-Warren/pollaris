@@ -1,0 +1,87 @@
+{
+  "name": "pollaris-frontend",
+  "description": "Pollaris Frontend",
+  "version": "1.22.4",
+  "author": "Patrick Higgins <phiggins@elizabethwarren.com>, Sienna Svob <ssvob@elizabethwarren.com>",
+  "engines": {
+    "node": "^12.16.1",
+    "yarn": "^1.22.4"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@contentful/rich-text-types": "^14.1.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "contentful-export": "^7.8.0",
+    "emotion-theming": "^10.0.27",
+    "eslint-plugin-emotion": "^10.0.27",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "gatsby-plugin-emotion": "^4.1.23",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-sass": "^2.1.29",
+    "gatsby-plugin-styled-components": "^3.1.19",
+    "gatsby-source-contentful": "^2.1.86",
+    "gatsby-transformer-remark": "^2.6.52",
+    "little-loader": "^0.2.0",
+    "lodash.get": "^4.4.2",
+    "marksy": "^8.0.0",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-animate-height": "^2.0.20",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-responsive": "^8.0.3",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "chalk": "^3.0.0",
+    "contentful-import": "^7.4.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-styled-components": "0.0.0",
+    "gatsby": "^2.19.5",
+    "gh-pages": "^2.0.1",
+    "husky": "^4.2.3",
+    "inquirer": "^7.0.4",
+    "prettier": "^1.17.0",
+    "pretty-quick": "^2.0.1",
+    "rimraf": "^3.0.2",
+    "yargs-parser": "^17.0.0"
+  },
+  "homepage": "https://github.com/Elizabeth-Warren/pollaris/frontend#readme",
+  "keywords": [
+    "gatsby",
+    "contentful",
+    "LFG",
+    "Two Cents"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elizabeth-Warren/pollaris.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "scripts": {
+    "dev": "npm run develop",
+    "develop": "gatsby develop",
+    "format": "prettier ./src/**",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gatsby clean",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "start": "npm run develop",
+    "setup": "node ./bin/setup.js",
+    "import": "node ./bin/importToContentful.js",
+    "export": "node ./bin/exportFromContentful.js"
+  }
+}

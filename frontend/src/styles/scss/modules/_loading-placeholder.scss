@@ -1,0 +1,29 @@
+@import "../helpers/index";
+
+.loading-placeholder {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 2px;
+  background-color: $off-white;
+  opacity: 0.5;
+}
+
+.loading-placeholder__small-header {
+  height: 24px;
+  margin-bottom: 8px;
+
+  + .loading-placeholder__small-header {
+    margin-bottom: 16px;
+    width: 60%;
+  }
+}
+
+.loading-placeholder__paragraph {
+  height: 18px;
+  margin-bottom: 8px;
+
+  + .loading-placeholder__paragraph {
+    width: 75%;
+  }
+}

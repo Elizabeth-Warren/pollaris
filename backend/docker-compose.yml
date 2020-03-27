@@ -1,0 +1,18 @@
+version: "3.1"
+
+services:
+  db:
+    # Use 10.7 for compatibility with Aurora Serverless Postgres
+    image: postgres:10
+    restart: always
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: django
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: pollaris
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}

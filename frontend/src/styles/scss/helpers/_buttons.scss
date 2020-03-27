@@ -1,0 +1,51 @@
+@mixin button(
+  $bg-color: $white,
+  $text-color: $blue,
+  $hover-text-color: $blue,
+  $button-size: 'md') {
+  @if $button-size == 'sm' {
+    @include type-1(
+      $color: $text-color,
+      $sm-size: 22px,
+      $lg-size: 22px);
+    padding: 3px 16px 5px;
+  }
+  @if $button-size == 'md' {
+    @include type-1(
+      $color: $text-color,
+      $sm-size: 30px,
+      $lg-size: 32px);
+    padding: 2px 18px 4px;
+  }
+  @if $button-size == 'lg' {
+    @include type-1(
+      $color: $text-color,
+      $sm-size: 30px,
+      $lg-size: 42px);
+    padding: 1px 14px 3px;
+
+    @media #{$desktop-up} {
+      padding: 1px 22px 4px;
+    }
+  }
+  background-color: $bg-color;
+  border: 4px solid $bg-color;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  text-transform: uppercase;
+  transition: all $hover-timing linear;
+  -webkit-appearance: none;
+
+  &:hover:not(:disabled) {
+    background-color: transparent;
+    color: $hover-text-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

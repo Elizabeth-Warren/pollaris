@@ -1,0 +1,36 @@
+{
+  "errors": [],
+  "home_address": {
+    "street_number": "225",
+    "street": "Iowa Ave",
+    "city": "Muscatine",
+    "state": "IA",
+    "zip5": "52761",
+    "zip9": "527613730",
+    "county": "Muscatine County",
+    "latitude": 41.42204449999999,
+    "longitude": -91.0459705
+  },
+  "pollaris_search_id": "36282548563850101196",
+  "polling_locations": [
+    {
+      "location_id": 4779469863456287918,
+      "location_name": "Caucus Location Prct MU04 - MUSSER PUBLIC LIBRARY",
+      "address": "408 E 2nd St",
+      "city": "Muscatine",
+      "state_code": "IA",
+      "zip": "52761",
+      "dates_hours": "7:00 PM",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "precinct": {
+    "van_precinct_id": 947534,
+    "state_code": "IA",
+    "county": "Muscatine",
+    "fips": "19139",
+    "precinct_code": "MU04"
+  },
+  "match_type": "MATCH_ADDRESS"
+}

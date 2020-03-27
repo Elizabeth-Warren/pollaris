@@ -1,0 +1,375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EntryForm /> renders <EntryForm /> 1`] = `
+.c5 {
+  color: inherit;
+  font-family: 'Ringside Regular A','Ringside Regular B','Helvetica',sans-serif;
+  font-size: 18px;
+  font-weight: inherit;
+  line-height: 1.3;
+}
+
+.c1 {
+  color: inherit;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.c0 {
+  text-align: center;
+  margin: 64px 0;
+}
+
+.c0 h1 {
+  color: #232444;
+}
+
+.c2 {
+  margin: 12px 0px 24px 0px;
+  max-width: 710px;
+}
+
+.c4 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.c4 h2 {
+  font-family: "Ringside Regular A","Ringside Regular B";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.c3 {
+  border: 16px solid #B7E4CF;
+  color: #232444;
+  padding: 32px 16px;
+}
+
+.c3 h4 {
+  margin-bottom: 16px;
+}
+
+.c3 .c6 {
+  margin-right: 0;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 72px;
+    -webkit-letter-spacing: -0.38px;
+    -moz-letter-spacing: -0.38px;
+    -ms-letter-spacing: -0.38px;
+    letter-spacing: -0.38px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding: 0;
+    max-width: 710px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding: 32px 64px;
+  }
+}
+
+<EntryForm
+  description="Form Description"
+  title="Form Title"
+>
+  <style__HeaderWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "style__HeaderWrapper-mszjr-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "text-align:center;margin:64px 0;h1{color:",
+              [Function],
+              ";}",
+            ],
+          },
+          "displayName": "style__HeaderWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "style__HeaderWrapper-mszjr-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <Headline
+          allCaps={true}
+          as="h1"
+          breakpoint="768px"
+          color="inherit"
+          size="lg"
+        >
+          <Headline__HeadlineWrapper
+            allCaps={true}
+            as="h1"
+            breakpoint="768px"
+            size="lg"
+            textColor="inherit"
+          >
+            <StyledComponent
+              allCaps={true}
+              as="h1"
+              breakpoint="768px"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Headline__HeadlineWrapper-sc-11tkyd2-0",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-family:",
+                      "'Ringside Compressed A', 'Ringside Compressed B', 'Helvetica', sans-serif",
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:bold;letter-spacing:",
+                      [Function],
+                      ";line-height:",
+                      "0.9",
+                      ";text-transform:",
+                      [Function],
+                      ";@media (min-width:",
+                      [Function],
+                      "){font-size:",
+                      [Function],
+                      ";letter-spacing:",
+                      [Function],
+                      "}",
+                    ],
+                  },
+                  "displayName": "Headline__HeadlineWrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Headline__HeadlineWrapper-sc-11tkyd2-0",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              size="lg"
+              textColor="inherit"
+            >
+              <h1
+                className="c1"
+                size="lg"
+              >
+                Form Title
+              </h1>
+            </StyledComponent>
+          </Headline__HeadlineWrapper>
+        </Headline>
+      </div>
+    </StyledComponent>
+  </style__HeaderWrapper>
+  <style__FormSection>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "style__FormSection-mszjr-1",
+            "isStatic": false,
+            "lastClassName": "c2",
+            "rules": Array [
+              "margin:12px 0px 24px 0px;max-width:",
+              [Function],
+              ";",
+              [Function],
+            ],
+          },
+          "displayName": "style__FormSection",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "style__FormSection-mszjr-1",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c2"
+      >
+        <style__EntryFormContainer>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "style__EntryFormContainer-mszjr-4",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "border:",
+                    "16px",
+                    " solid ",
+                    [Function],
+                    ";color:",
+                    [Function],
+                    ";padding:",
+                    "32px",
+                    " ",
+                    "16px",
+                    ";h4{margin-bottom:",
+                    "16px",
+                    ";}",
+                    ".c6",
+                    "{margin-right:0;}",
+                    [Function],
+                  ],
+                },
+                "displayName": "style__EntryFormContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "style__EntryFormContainer-mszjr-4",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c3"
+            >
+              <style__FormHeader>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "style__FormHeader-mszjr-3",
+                        "isStatic": false,
+                        "lastClassName": "c4",
+                        "rules": Array [
+                          "text-align:center;margin-bottom:32px;h2{",
+                          [Function],
+                          "}",
+                        ],
+                      },
+                      "displayName": "style__FormHeader",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "style__FormHeader-mszjr-3",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c4"
+                  >
+                    <BodyCopy
+                      as="h2"
+                      color="inherit"
+                      size="md"
+                      weight="inherit"
+                    >
+                      <BodyCopy__CopyWrapper
+                        as="h2"
+                        size="md"
+                        textColor="inherit"
+                        weight="inherit"
+                      >
+                        <StyledComponent
+                          as="h2"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "BodyCopy__CopyWrapper-twu3iz-0",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "color:",
+                                  [Function],
+                                  ";font-family:",
+                                  "'Ringside Regular A', 'Ringside Regular B', 'Helvetica', sans-serif",
+                                  ";font-size:",
+                                  [Function],
+                                  ";font-weight:",
+                                  [Function],
+                                  ";line-height:",
+                                  [Function],
+                                  ";",
+                                ],
+                              },
+                              "displayName": "BodyCopy__CopyWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "BodyCopy__CopyWrapper-twu3iz-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          size="md"
+                          textColor="inherit"
+                          weight="inherit"
+                        >
+                          <h2
+                            className="c5"
+                            size="md"
+                          >
+                            Form Description
+                          </h2>
+                        </StyledComponent>
+                      </BodyCopy__CopyWrapper>
+                    </BodyCopy>
+                  </div>
+                </StyledComponent>
+              </style__FormHeader>
+              <div />
+            </div>
+          </StyledComponent>
+        </style__EntryFormContainer>
+      </div>
+    </StyledComponent>
+  </style__FormSection>
+</EntryForm>
+`;

@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubjectHeader /> renders <SubjectHeader /> 1`] = `
+.c1 {
+  color: inherit;
+  font-family: 'Ringside Regular A','Ringside Regular B','Helvetica',sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+.c0 {
+  color: #232444;
+  border-bottom: 2px solid #232444;
+  margin-bottom: 32px;
+}
+
+.c2 {
+  color: #232444;
+  font-size: 26px;
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    font-size: 36px;
+  }
+}
+
+<SubjectHeader>
+  <SubjectHeader__HeaderWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "SubjectHeader__HeaderWrapper-sc-58y1aa-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "color:",
+              [Function],
+              ";border-bottom:2px solid ",
+              [Function],
+              ";margin-bottom:",
+              "32px",
+              ";",
+            ],
+          },
+          "displayName": "SubjectHeader__HeaderWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "SubjectHeader__HeaderWrapper-sc-58y1aa-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <BodyCopy
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+                "isStatic": false,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "color:",
+                  [Function],
+                  ";font-size:",
+                  "26px",
+                  ";",
+                  [Function],
+                ],
+              },
+              "displayName": "SubjectHeader__BodyHeader",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          color="inherit"
+          size="xl"
+          weight="bold"
+        >
+          <BodyCopy__CopyWrapper
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "color:",
+                    [Function],
+                    ";font-size:",
+                    "26px",
+                    ";",
+                    [Function],
+                  ],
+                },
+                "displayName": "SubjectHeader__BodyHeader",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            size="xl"
+            textColor="inherit"
+            weight="bold"
+          >
+            <StyledComponent
+              as={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      "26px",
+                      ";",
+                      [Function],
+                    ],
+                  },
+                  "displayName": "SubjectHeader__BodyHeader",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "BodyCopy__CopyWrapper-twu3iz-0",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-family:",
+                      "'Ringside Regular A', 'Ringside Regular B', 'Helvetica', sans-serif",
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";line-height:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "BodyCopy__CopyWrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "BodyCopy__CopyWrapper-twu3iz-0",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              size="xl"
+              textColor="inherit"
+              weight="bold"
+            >
+              <SubjectHeader__BodyHeader
+                className="c1"
+                size="xl"
+                textColor="inherit"
+                weight="bold"
+              >
+                <StyledComponent
+                  className="c1"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "color:",
+                          [Function],
+                          ";font-size:",
+                          "26px",
+                          ";",
+                          [Function],
+                        ],
+                      },
+                      "displayName": "SubjectHeader__BodyHeader",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "SubjectHeader__BodyHeader-sc-58y1aa-1",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  size="xl"
+                  textColor="inherit"
+                  weight="bold"
+                >
+                  <span
+                    className="c2 c1"
+                    size="xl"
+                  >
+                    Voting On Primary Day
+                  </span>
+                </StyledComponent>
+              </SubjectHeader__BodyHeader>
+            </StyledComponent>
+          </BodyCopy__CopyWrapper>
+        </BodyCopy>
+      </div>
+    </StyledComponent>
+  </SubjectHeader__HeaderWrapper>
+</SubjectHeader>
+`;

@@ -1,0 +1,213 @@
+@mixin type-std(
+  $color: $body-color,
+  $sm-size: 18px,
+  $lg-size: 18px) {
+  @include reg-book;
+
+  color: $color;
+  font-size: $sm-size;
+  line-height: 1.67;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-1(
+  $color: $blue,
+  $sm-size: 52px,
+  $lg-size: 60px) {
+  @include comp-bold;
+
+  color: $color;
+  font-size: $sm-size;
+  letter-spacing: 0.3px;
+  line-height: 0.92;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-2(
+  $color: $blue,
+  $sm-size: 32px,
+  $lg-size: 32px) {
+  @include comp-bold;
+
+  color: $color;
+  font-size: $sm-size;
+  line-height: 1.06;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-3(
+  $color: $blue,
+  $sm-size: 17px,
+  $lg-size: 17px) {
+  @include extra-wide-black;
+
+  color: $color;
+  font-size: $sm-size;
+  line-height: 1.59;
+  text-transform: uppercase;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-4(
+  $color: $body-color,
+  $sm-size: 24px,
+  $lg-size: 24px) {
+  @include reg-book;
+
+  color: $color;
+  font-size: $sm-size;
+  line-height: 1.34;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-5(
+  $color: $body-color,
+  $sm-size: 12px,
+  $lg-size: 12px) {
+  @include wide-bold;
+
+  color: $color;
+  font-size: $sm-size;
+  letter-spacing: 0.86px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-5-light(
+  $color: $body-color,
+  $sm-size: 12px,
+  $lg-size: 12px) {
+  @include wide-light;
+
+  color: $color;
+  font-size: $sm-size;
+  letter-spacing: 0.86px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-6(
+  $color: $gray-dark,
+  $sm-size: 15px,
+  $lg-size: 15px) {
+  @include reg-book;
+
+  color: $color;
+  font-size: $sm-size;
+  line-height: 1.47;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+}
+
+@mixin type-link ($link-color: $green) {
+  @include reg-bold;
+  background: linear-gradient(to bottom, transparent 0%,transparent 65%,$link-color 65%,$link-color 100%);
+  color: inherit;
+
+  &:hover {
+    background: none;
+  }
+}
+
+@mixin type-link-blue {
+  @include reg-bold;
+  background: linear-gradient(to bottom, transparent 0%,transparent 65%,$blue-light 65%,$blue-light 100%);
+  color: inherit;
+
+  &:hover {
+    background: none;
+  }
+}
+
+@mixin arrow-link(
+  $color: $white,
+  $sm-size: 18px,
+  $lg-size: 22px,
+  $chevron-size: 6,
+  $chevron-color: $red) {
+  @include icon-chevron($size: $chevron-size, $color: $chevron-color);
+  @include reg-bold;
+
+  color: $color;
+  font-size: $sm-size;
+  line-height: 1.28;
+
+  @media #{$tablet-up} {
+    font-size: $lg-size;
+  }
+
+  &:hover {
+    &::after {
+      margin-left: 9px;
+    }
+  }
+}
+
+@mixin download-link(
+  $icon-color: $red,
+  $icon-hover-color: $blue,
+  $icon-sm-size: 18px,
+  $icon-lg-size: 18px) {
+
+  &:after {
+    @extend .icon;
+    color: $icon-color;
+    content: "\64";
+    font-size: $icon-sm-size;
+    margin-left: 10px;
+    transition: color $hover-timing linear;
+
+    @media #{$tablet-up} {
+      font-size: $icon-lg-size;
+    }
+  }
+
+  &:hover {
+    &:after {
+      color: $icon-hover-color;
+    }
+  }
+}
+
+@mixin unstyled-link {
+  text-decoration: none;
+}
+
+@mixin unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin unstyled-btn {
+  @include reg-book;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  padding: 0;
+}

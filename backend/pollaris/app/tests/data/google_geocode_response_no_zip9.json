@@ -1,0 +1,73 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "123",
+          "short_name": "123",
+          "types": ["street_number"]
+        },
+        {
+          "long_name": "Main Street",
+          "short_name": "Main St",
+          "types": ["route"]
+        },
+        {
+          "long_name": "Charlestown",
+          "short_name": "Charlestown",
+          "types": ["neighborhood", "political"]
+        },
+        {
+          "long_name": "Boston",
+          "short_name": "Boston",
+          "types": ["locality", "political"]
+        },
+        {
+          "long_name": "Suffolk County",
+          "short_name": "Suffolk County",
+          "types": ["administrative_area_level_2", "political"]
+        },
+        {
+          "long_name": "Massachusetts",
+          "short_name": "MA",
+          "types": ["administrative_area_level_1", "political"]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": ["country", "political"]
+        },
+        {
+          "long_name": "02129",
+          "short_name": "02129",
+          "types": ["postal_code"]
+        }
+      ],
+      "formatted_address": "123 Main St, Boston, MA 02129, USA",
+      "geometry": {
+        "location": {
+          "lat": 42.3744875,
+          "lng": -71.06347439999999
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 42.3758364802915,
+            "lng": -71.06212541970849
+          },
+          "southwest": {
+            "lat": 42.3731385197085,
+            "lng": -71.0648233802915
+          }
+        }
+      },
+      "place_id": "ChIJd_ueCe1w44kRD_KFuN5w5nA",
+      "plus_code": {
+        "compound_code": "9WFP+QJ Boston, Massachusetts, United States",
+        "global_code": "87JC9WFP+QJ"
+      },
+      "types": ["street_address"]
+    }
+  ],
+  "status": "OK"
+}

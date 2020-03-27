@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c0 {
+  color: inherit;
+  font-family: 'Ringside Extra Wide SSm A','Ringside Extra Wide SSm B','Helvetica',sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.c1 {
+  color: inherit;
+  font-family: 'Ringside Extra Wide SSm A','Ringside Extra Wide SSm B','Helvetica',sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.c2 {
+  color: inherit;
+  font-family: 'Ringside Extra Wide SSm A','Ringside Extra Wide SSm B','Helvetica',sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1.6px;
+  -moz-letter-spacing: 1.6px;
+  -ms-letter-spacing: 1.6px;
+  letter-spacing: 1.6px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+<div>
+  <h1
+    className="c0"
+    size="lg"
+  >
+    LG: 
+    Hello world
+  </h1>
+  <h1
+    className="c1"
+    size="md"
+  >
+    MD: 
+    Hello world
+  </h1>
+  <h1
+    className="c2"
+    size="sm"
+  >
+    SM: 
+    Hello world
+  </h1>
+</div>
+`;

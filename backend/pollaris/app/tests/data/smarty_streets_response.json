@@ -1,0 +1,46 @@
+[
+  {
+    "input_index": 0,
+    "candidate_index": 0,
+    "delivery_line_1": "123 N Main St",
+    "last_line": "Boston MA 02129-3533",
+    "delivery_point_barcode": "021293533237",
+    "components": {
+      "primary_number": "123",
+      "street_name": "Main",
+      "street_predirection": "N",
+      "street_suffix": "St",
+      "city_name": "Boston",
+      "default_city_name": "Charlestown",
+      "state_abbreviation": "MA",
+      "zipcode": "02129",
+      "plus4_code": "3533",
+      "delivery_point": "23",
+      "delivery_point_check_digit": "7"
+    },
+    "metadata": {
+      "record_type": "S",
+      "zip_type": "Standard",
+      "county_fips": "25025",
+      "county_name": "Suffolk",
+      "carrier_route": "C009",
+      "congressional_district": "07",
+      "rdi": "Residential",
+      "elot_sequence": "0062",
+      "elot_sort": "A",
+      "latitude": 42.37454,
+      "longitude": -71.06335,
+      "precision": "Zip9",
+      "time_zone": "Eastern",
+      "utc_offset": -5,
+      "dst": true
+    },
+    "analysis": {
+      "dpv_match_code": "Y",
+      "dpv_footnotes": "AABB",
+      "dpv_cmra": "N",
+      "dpv_vacant": "N",
+      "active": "N"
+    }
+  }
+]

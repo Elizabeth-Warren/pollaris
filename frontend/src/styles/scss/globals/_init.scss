@@ -1,0 +1,25 @@
+// Ringisde faces loaded from Typography.com
+
+@import "./iconfont";
+@import "./reset";
+@import "./layouts";
+@import "./utility";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include reg-book;
+  font-size: 18px;
+  line-height: 1.67;
+  background: $white;
+  color: $body-color;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.download-link {
+  @include download-link;
+}

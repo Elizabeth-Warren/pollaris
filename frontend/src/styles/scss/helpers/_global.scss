@@ -1,0 +1,79 @@
+$hover-timing: 0.15s;
+
+$site-max-width: 1400px;
+$section-max-width: 1150px;
+$content-max-width: 860px;
+
+$desktop-wide: 1440px;
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 480px; // Maybe we should avoid this one going forward...
+$mobile-large: 411px;
+$mobile-small: 375px;
+
+$desktop-wide-up: '(min-width: #{$desktop-wide})';
+$desktop-wide-down: '(max-width: #{$desktop-wide - 1})';
+$desktop-up: '(min-width: #{$desktop})';
+$desktop-down: '(max-width: #{$desktop - 1})';
+$tablet-up: '(min-width: #{$tablet})';
+$tablet-down: '(max-width: #{$tablet - 1})';
+$mobile-up: '(min-width: #{$mobile})';
+$mobile-down: '(max-width: #{$mobile - 1})';
+$mobile-small-up: '(min-width: #{$mobile-small})';
+$mobile-large-up: '(min-width: #{$mobile-large})';
+
+@mixin mobile-down {
+  display: block;
+  @media #{$mobile-up} {
+    display: none;
+  }
+}
+
+@mixin mobile-up {
+  display: none;
+  @media #{$mobile-up} {
+    display: block;
+  }
+}
+
+@mixin tablet-down {
+  display: block;
+  @media #{$tablet-up} {
+    display: none;
+  }
+}
+
+@mixin tablet-up {
+  display: none;
+  @media #{$tablet-up} {
+    display: block
+  }
+}
+
+@mixin desktop-down {
+  display: block;
+  @media #{$desktop-up} {
+    display: none;
+  }
+}
+
+@mixin desktop-up {
+  display: none;
+  @media #{$desktop-up} {
+    display: block;
+  }
+}
+
+@mixin desktop-wide-down {
+  display: block;
+  @media #{$desktop-wide-up} {
+    display: none;
+  }
+}
+
+@mixin desktop-wide-up {
+  display: none;
+  @media #{$desktop-wide-up} {
+    display: block;
+  }
+}

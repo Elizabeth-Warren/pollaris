@@ -1,0 +1,936 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #b61b28;
+  border: 4px solid #b61b28;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #b61b28;
+  border: 4px solid #b61b28;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c1:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #b61b28;
+  border: 4px solid #b61b28;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c2:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #232444;
+  border: 4px solid #232444;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c3:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #232444;
+  border: 4px solid #232444;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c4:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c5 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #232444;
+  border: 4px solid #232444;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c5:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c5:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c6 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #b7e4cf;
+  border: 4px solid #b7e4cf;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c6:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c6:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #b7e4cf;
+  border: 4px solid #b7e4cf;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c7:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c7:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c8 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #b7e4cf;
+  border: 4px solid #b7e4cf;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c8:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c8:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c9 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #575993;
+  border: 4px solid #575993;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c9:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c9:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c10 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #575993;
+  border: 4px solid #575993;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c10:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c10:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c11 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #575993;
+  border: 4px solid #575993;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c11:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c11:hover:not(:disabled) {
+  background-color: transparent;
+  color: #232444;
+}
+
+.c12 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 4px solid #232444;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c12:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c12:hover:not(:disabled) {
+  background-color: #232444;
+  color: #fff;
+}
+
+.c13 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 4px solid #232444;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c13:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c13:hover:not(:disabled) {
+  background-color: #232444;
+  color: #fff;
+}
+
+.c14 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 4px solid #232444;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c14:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c14:hover:not(:disabled) {
+  background-color: #232444;
+  color: #fff;
+}
+
+.c15 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 4px solid #fff;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c15:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c15:hover:not(:disabled) {
+  background-color: transparent;
+  color: #fff;
+}
+
+.c16 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 4px solid #fff;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c16:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c16:hover:not(:disabled) {
+  background-color: transparent;
+  color: #fff;
+}
+
+.c17 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 4px solid #fff;
+  border-radius: 0;
+  color: #232444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  padding: 4px 16px 8px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-property: background-color,border-color,color,opacity;
+  transition-property: background-color,border-color,color,opacity;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c17:hover:not(:disabled) {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    font-size: 36px;
+  }
+}
+
+<div>
+  <div>
+    <button
+      className="c0"
+      size="sm"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c0"
+      disabled={true}
+      size="sm"
+    >
+      Click me
+    </button>
+    <button
+      className="c1"
+      size="md"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c1"
+      disabled={true}
+      size="md"
+    >
+      Click me
+    </button>
+    <button
+      className="c2"
+      size="lg"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c2"
+      disabled={true}
+      size="lg"
+    >
+      Click me
+    </button>
+  </div>
+  <div>
+    <button
+      className="c3"
+      size="sm"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c3"
+      disabled={true}
+      size="sm"
+    >
+      Click me
+    </button>
+    <button
+      className="c4"
+      size="md"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c4"
+      disabled={true}
+      size="md"
+    >
+      Click me
+    </button>
+    <button
+      className="c5"
+      size="lg"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c5"
+      disabled={true}
+      size="lg"
+    >
+      Click me
+    </button>
+  </div>
+  <div>
+    <button
+      className="c6"
+      size="sm"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c6"
+      disabled={true}
+      size="sm"
+    >
+      Click me
+    </button>
+    <button
+      className="c7"
+      size="md"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c7"
+      disabled={true}
+      size="md"
+    >
+      Click me
+    </button>
+    <button
+      className="c8"
+      size="lg"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c8"
+      disabled={true}
+      size="lg"
+    >
+      Click me
+    </button>
+  </div>
+  <div>
+    <button
+      className="c9"
+      size="sm"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c9"
+      disabled={true}
+      size="sm"
+    >
+      Click me
+    </button>
+    <button
+      className="c10"
+      size="md"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c10"
+      disabled={true}
+      size="md"
+    >
+      Click me
+    </button>
+    <button
+      className="c11"
+      size="lg"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c11"
+      disabled={true}
+      size="lg"
+    >
+      Click me
+    </button>
+  </div>
+  <div>
+    <button
+      className="c12"
+      size="sm"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c12"
+      disabled={true}
+      size="sm"
+    >
+      Click me
+    </button>
+    <button
+      className="c13"
+      size="md"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c13"
+      disabled={true}
+      size="md"
+    >
+      Click me
+    </button>
+    <button
+      className="c14"
+      size="lg"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c14"
+      disabled={true}
+      size="lg"
+    >
+      Click me
+    </button>
+  </div>
+  <div>
+    <button
+      className="c15"
+      size="sm"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c15"
+      disabled={true}
+      size="sm"
+    >
+      Click me
+    </button>
+    <button
+      className="c16"
+      size="md"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c16"
+      disabled={true}
+      size="md"
+    >
+      Click me
+    </button>
+    <button
+      className="c17"
+      size="lg"
+    >
+      Click me
+    </button>
+     
+    <button
+      className="c17"
+      disabled={true}
+      size="lg"
+    >
+      Click me
+    </button>
+  </div>
+</div>
+`;

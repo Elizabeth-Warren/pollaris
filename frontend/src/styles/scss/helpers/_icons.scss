@@ -1,0 +1,84 @@
+@mixin icon-chevron($size: 6, $color: $red) {
+  position: relative;
+
+  &::after {
+    border-style: solid;
+    border-width: #{$size/2}px #{$size/2}px 0 0;
+    box-sizing: content-box;
+    content: '';
+    color: #{$color};
+    display: inline-block;
+    height: #{$size}px;
+    margin-left: 5px;
+    position: absolute;
+    top: calc(50% - #{($size * 1.4142) / 2}px );
+    transform: rotate(45deg);
+    transition: margin-left $hover-timing ease-in-out;
+    width: #{$size}px;
+  }
+}
+
+@mixin icon-x($size: 24, $color: $black) {
+  cursor: pointer;
+  display: block;
+  height: #{$size}px;
+  width: #{$size}px;
+
+  &::before,
+  &::after {
+    background-color: #{$color};
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    width: #{$size * 1.4142}px; //$size * square root of 2
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@mixin triangle($direction, $sizeH, $sizeV, $color) {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    -moz-transform: scale(.9999);
+
+  @if $direction == top {
+    border-width: 0 $sizeV $sizeH $sizeV;
+    border-color: transparent transparent $color transparent;
+  }
+  @if $direction == bottom{
+    border-width: $sizeV $sizeH 0 $sizeV;
+    border-color: $color transparent transparent transparent;
+  }
+  @if $direction == left{
+    border-width: $sizeV $sizeH $sizeV 0;
+    border-color: transparent $color transparent transparent;
+  }
+  @if $direction == right{
+    border-width: $sizeV 0 $sizeV $sizeH;
+    border-color: transparent transparent transparent $color;
+  }
+  @if $direction == topright{
+    border-width: 0 $sizeH $sizeV 0;
+    border-color: transparent $color transparent transparent;
+  }
+  @if $direction == bottomright{
+    border-width: 0 0 $sizeH $sizeV;
+    border-color: transparent transparent $color transparent;
+  }
+  @if $direction == bottomleft{
+    border-width: $sizeH 0 0 $sizeV;
+    border-color: transparent transparent transparent $color;
+  }
+  @if $direction == topleft{
+    border-width: $sizeH $sizeV 0 0;
+    border-color: $color transparent transparent transparent;
+  }
+}

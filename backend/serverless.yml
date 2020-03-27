@@ -1,0 +1,158 @@
+# Pollaris Deploy Automation
+
+service: pollaris
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+custom:
+  name: pollaris
+  stage: ${opt:stage, env:STAGE, "dev"}
+  projectRoot: ${env:GITHUB_WORKSPACE, "${env:PWD}/../"}
+  deploy:
+    # Users can define these parameters in SSM (they will be looked up at deploy time)
+    # or in the deploy environment or inline
+    bucket_name: ${ssm:${BUCKET NAME~true}
+    bucket_arn: ${ssm:${BUCKET ARN~true}
+  wsgi:
+    app: pollaris.wsgi.application
+  pythonRequirements:
+    dockerizePip: true
+    slim: true
+    layer: true
+    useDownloadCache: false
+    useStaticCache: false
+  vpcConfig:
+    subnetIds:
+      - "${ssm:${SUBNET ID}~true}"
+    securityGroupIds:
+      - "${ssm:${SECURITY GROUP ID}~true}"
+  customDomain:
+    domainName: "A DOMAIN NAME"
+    stage: ${self:custom.stage}
+    certificateName: "*.A DOMAIN NAME"
+    createRoute53Record: true
+    securityPolicy: tls_1_2 # current top tier
+  associateWaf:
+    # OPTIONAL. A WAF is not strictly required, but it is generally useful to have
+    # one to handle IP-level rate limiting
+    name: WAF NAME
+  ssmVar:
+    # Users can define these parameters in SSM (they will be looked up at deploy time)
+    # or in the deploy environment or inline. Secrets like this are best maintained
+    # in something like SSM, but careful use of environment variables works here too!
+    django_secret_key: ${ssm:DJANGO_SECRET_KEY~true}
+    postgres_host: ${ssm:POSTGRES_HOST~true}
+    postgres_password: ${ssm:/${POSTGRES_PASSWORD~true}
+    mobile_commons_username: ${ssm:MOBILE_COMMONS_USERNAME~true}
+    mobile_commons_password: ${ssm:MOBILE_COMMONS_PASSWORD~true}
+    smartystreets_auth_id: ${ssm:SMARTYSTREETS_AUTH_ID~true}
+    smartystreets_auth_token: ${ssm:SMARTYSTREETS_AUTH_TOKEN~true}
+    google_maps_api_key: ${ssm:GOOGLE_MAPS_API_KEY~true}
+  alerts:
+    nameTemplate: $[functionName]-$[metricName]-Alarm
+    stages:
+      - prod
+    topics:
+      alarm:
+        topic: ${ssm:/shared/sns/mission-control/arn~true}
+    definitions:
+      functionInvocations:
+        threshold: 1000
+      functionDuration:
+        threshold: 10000
+    alarms:
+      - functionThrottles
+      - functionErrors
+      - functionInvocations
+      - functionDuration
+
+provider:
+  name: aws
+  runtime: python3.7
+  region: ${opt:region, env:REGION, "us-east-1"}
+  stage: ${self:custom.stage}
+  deploymentBucket:
+    name: ${self:custom.deploy.bucket_name}
+    blockPublicAccess: true
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ssm:GetParameter
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - cloudwatch:PutMetricData
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - events:PutEvents
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - "ses:SendEmail"
+        - "ses:SendTemplatedEmail"
+        - "ses:SendBulkTemplatedEmail"
+      Resource: "*"
+  environment:
+    STAGE: ${self:custom.stage}
+    DJANGO_SECRET_KEY: ${self:custom.ssmVar.django_secret_key}
+    POSTGRES_HOST: ${self:custom.ssmVar.postgres_host}
+    POSTGRES_PASSWORD: ${self:custom.ssmVar.postgres_password}
+    POSTGRES_USER: postgres
+    MOBILE_COMMONS_USERNAME: ${self:custom.ssmVar.mobile_commons_username}
+    MOBILE_COMMONS_PASSWORD: ${self:custom.ssmVar.mobile_commons_password}
+    SMARTYSTREETS_AUTH_ID: ${self:custom.ssmVar.smartystreets_auth_id}
+    SMARTYSTREETS_AUTH_TOKEN: ${self:custom.ssmVar.smartystreets_auth_token}
+    GOOGLE_MAPS_API_KEY: ${self:custom.ssmVar.google_maps_api_key}
+
+package:
+  excludeDevDependencies: true
+  individually: true
+  exclude:
+    - ".pytest_cache/**"
+    - "node_modules/**"
+    - ".vscode/**"
+
+functions:
+  server:
+    name: ${self:custom.stage}-${self:custom.name}-server
+    handler: wsgi_handler.handler
+    events:
+      - http: ANY /
+      - http: ANY {proxy+}
+      - schedule:
+          rate: rate(4 minutes)
+    timeout: 30
+    vpc: ${self:custom.vpcConfig}
+    layers:
+      - { Ref: PythonRequirementsLambdaLayer }
+  preflight:
+    name: ${self:custom.stage}-${self:custom.name}-preflight
+    handler: preflight.handle
+    vpc: ${self:custom.vpcConfig}
+    timeout: 900
+    alarms:
+      - name: functionDuration
+        threshold: 300000 # 300 seconds = 5 minutes
+    layers:
+      - { Ref: PythonRequirementsLambdaLayer }
+  polling_location_import:
+    name: ${self:custom.stage}-pollaris-import-location-from-gsheet
+    handler: polling_location_import.handle
+    vpc: ${self:custom.vpcConfig}
+    events:
+      - schedule:
+          rate: cron(3 * * * ? *) # Every hour, 3 minutes past the hour
+    timeout: 600
+    alarms:
+      - name: functionDuration
+        threshold: 300000 # 300 seconds = 5 minutes
+    layers:
+      - { Ref: PythonRequirementsLambdaLayer }
+
+plugins:
+  - serverless-domain-manager
+  - serverless-wsgi
+  - serverless-python-requirements
+  - serverless-associate-waf
+  - serverless-plugin-aws-alerts

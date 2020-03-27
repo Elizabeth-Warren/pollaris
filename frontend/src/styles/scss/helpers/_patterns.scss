@@ -1,0 +1,13 @@
+@mixin dot-bg(
+  $bg-color: $blue,
+  $dot-color: $white,
+  $dot-size: 8px,
+  $dot-spacing-x: 16px,
+  $dot-spacing-y: 16px) {
+    background: $bg-color;
+    background-image:
+      radial-gradient($dot-color 18%, transparent 0),
+      radial-gradient($dot-color 18%, transparent 0);
+    background-size: $dot-size*4 $dot-size*4;
+    background-position: 0 0, $dot-spacing-x $dot-spacing-y;
+}

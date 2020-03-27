@@ -1,0 +1,35 @@
+{
+  "errors": [],
+  "home_address": {
+    "street_number": "19",
+    "street": "Jackson St",
+    "city": "Concord",
+    "state": "NH",
+    "zip5": "03301",
+    "county": "Merrimack County",
+    "latitude": 43.2107683,
+    "longitude": -71.5442281
+  },
+  "pollaris_search_id": "465546411023093063",
+  "polling_locations": [
+    {
+      "location_id": 7288593194550180153,
+      "location_name": "Boys & Girls Club Of Greater Concord",
+      "address": "55 Bradley St",
+      "city": "Concord",
+      "state_code": "NH",
+      "zip": "03301",
+      "dates_hours": "7:00 AM - 7:00 PM",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "precinct": {
+    "van_precinct_id": 972240,
+    "state_code": "NH",
+    "county": "Merrimack",
+    "fips": "33013",
+    "precinct_code": "Concord - Ward 04"
+  },
+  "match_type": "MATCH_ADDRESS"
+}

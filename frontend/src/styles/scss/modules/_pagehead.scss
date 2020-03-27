@@ -1,0 +1,47 @@
+.m-pagehead {
+  margin-bottom: 65px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.m-pagehead__head {
+  @include type-1;
+  margin-bottom: 32px;
+}
+
+.m-pagehead__subhead {
+  @include type-2;
+  margin-bottom: 38px;
+}
+
+.m-pagehead__byline {
+  @include type-5;
+}
+
+.m-pagehead__author,
+.m-pagehead__date {
+  display: block;
+
+  @media #{$tablet-up} {
+    display: inline;
+  }
+}
+
+.m-pagehead__divider {
+  display: none;
+
+  @media #{$tablet-up} {
+    background-color: $red;
+    display: inline-block;
+    height: 24px;
+    margin: 0 8px;
+    position: relative;
+    top: 6px;
+    width: 3px;
+  }
+}
+
+.m-pagehead__date {
+  @include type-5-light;
+  white-space:nowrap;
+}

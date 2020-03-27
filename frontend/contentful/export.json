@@ -1,0 +1,4330 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "pollingLocatorVotingType",
+        "type": "ContentType",
+        "createdAt": "2020-03-05T19:27:31.267Z",
+        "updatedAt": "2020-03-20T16:04:37.383Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 89,
+        "publishedAt": "2020-03-20T16:04:37.383Z",
+        "firstPublishedAt": "2020-03-05T19:27:35.142Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 45,
+        "version": 90,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "displayField": "internalTitle",
+      "name": "Polling Locator Voting Type",
+      "description": "Data for a specific type of a states' polling locations.",
+      "fields": [
+        {
+          "id": "internalTitle",
+          "name": "Internal Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "votingType",
+          "name": "Voting Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "in": [
+                "polling_locations",
+                "early_vote_locations",
+                "vote_by_mail",
+                "dropbox_locations"
+              ],
+              "message": "Accepts \"polling_locations\", \"early_vote_locations\", \"vote_by_mail\", \"dropbox_locations\""
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "expiresAt",
+          "name": "Expires At",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "votingPeriodStartTime",
+          "name": "Voting Period Start Time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "votingPeriodEndTime",
+          "name": "Voting Period End Time",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "V2 - Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subAnchorDescription",
+          "name": "V3 - Sub Anchor Description",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "descriptionSingleResult",
+          "name": "V4 - Vote Card Description (Single Result)",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "descriptionMultipleResults",
+          "name": "V4 - Vote Card Description (Multiple Results)",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voteCardHeading",
+          "name": "V5 - Vote Card Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voteCardButtonText",
+          "name": "V6 - Vote Card Button Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "datesHoursOverride",
+          "name": "Dates Hours Override",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "dateTimeOverride",
+          "name": "Date Time Override",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "callsToAction",
+          "name": "Calls To Action",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voterEducationHeading",
+          "name": "R1 - Voter Education Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voterEducation",
+          "name": "R2 - Voter Education",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "formLocationSelectText",
+          "name": "Form Location Select Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showNoDataFallbackCard",
+          "name": "Show No Data Fallback Card",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "disableSelectionIfNoData",
+          "name": "Disable Selection If No Data",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "noDataFallbackText",
+          "name": "No Data Fallback Text",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "noDataFallbackButtonText",
+          "name": "No Data Fallback Button Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voteByMailContent",
+          "name": "Vote By Mail Content",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "stateSpecificPollingPlaceContentModule",
+        "type": "ContentType",
+        "createdAt": "2020-03-05T19:27:31.277Z",
+        "updatedAt": "2020-03-20T16:04:38.342Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 89,
+        "publishedAt": "2020-03-20T16:04:38.342Z",
+        "firstPublishedAt": "2020-03-05T19:27:35.445Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 45,
+        "version": 90,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "displayField": "internalTitle",
+      "name": "State-Specific Polling Place Content Module",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalTitle",
+          "name": "Internal Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "whitelisted",
+          "name": "Whitelisted",
+          "type": "Boolean",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "emailBelowFormCTA",
+          "name": "EmailBelowFormCTA",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "states",
+          "name": "States",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "resultTitle",
+          "name": "V1 - Result Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resultSubHeaderForSingleVoteType",
+          "name": "Result Sub-header for Single Vote Type",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "userLocation",
+          "name": "User Location",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "customLocationNamePrefix",
+          "name": "Custom Location Name Prefix",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "belowMapCTAText",
+          "name": "belowMapCTAText",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "belowMapCTAUrl",
+          "name": "BelowMapCTAUrl",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "timeOfEvent",
+          "name": "Time of Event",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sendToSelfFormTitleOverride",
+          "name": "V7 - Send To Self Form Title Override",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "votingTypes",
+          "name": "Specific Voting Types Content",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "dayOfVotingExpiry",
+          "name": "Day of Voting Expiry",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sendToSelfFormVotingTypeText",
+          "name": "Send To Self Form Voting Type Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sendToSelfFormLocationSelectText",
+          "name": "V8 - Send to Self Form Location Select Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fallbackFormOverride",
+          "name": "Fallback Form Override",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "pagePollingPlaceLocator",
+        "type": "ContentType",
+        "createdAt": "2020-03-05T19:27:31.323Z",
+        "updatedAt": "2020-03-20T16:04:38.123Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 89,
+        "publishedAt": "2020-03-20T16:04:38.123Z",
+        "firstPublishedAt": "2020-03-05T19:27:34.653Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 45,
+        "version": 90,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "displayField": "internalTitle",
+      "name": "[Page] Polling Place Locator",
+      "description": "Content type for /vote page on ew",
+      "fields": [
+        {
+          "id": "internalTitle",
+          "name": "Internal Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "copyUrl",
+          "name": "CopyUrl",
+          "type": "Object",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "errorState",
+          "name": "Error State",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "issuesVerb",
+          "name": "Issues Verb",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resultTitleFallback",
+          "name": "Result Title Fallback",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sharePrompt",
+          "name": "Share Prompt",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "googleErrors",
+          "name": "Google Errors",
+          "type": "Object",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "emailBSDFormID",
+          "name": "Email BSD Form ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "entryFormLabel",
+          "name": "Entry Form Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fallbackPrompt",
+          "name": "Fallback Prompt",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "issuesFormBody",
+          "name": "Issues Form Body",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resultBackText",
+          "name": "Result Back Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "defaultResource",
+          "name": "Default Resource",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resultWhenLabel",
+          "name": "Result When Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "resultWhereLabel",
+          "name": "Result Where Label",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showMoreLocationsText",
+          "name": "Show More Locations Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showMoreLocationsIncrement",
+          "name": "Show More Locations Increment",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "submitButtonText",
+          "name": "Submit Button Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "twitterShareText",
+          "name": "Twitter Share Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "emailBelowFormCTA",
+          "name": "Email Below Form CTA",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "facebookShareText",
+          "name": "Facebook Share Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "volunteerBsdFormId",
+          "name": "Volunteer BSD Form ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sendToSelfFormTitle",
+          "name": "Send To Self Form Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sendToSelfFormButton",
+          "name": "Send To Self Form Button",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "mobileFooterSendToSelfText",
+          "name": "Mobile Footer Send To Self Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "mobileFooterBackToTopText",
+          "name": "MobileFooterBackToTopText",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "emailBSDFormCustomFields",
+          "name": "Email BSD Form Custom Fields",
+          "type": "Object",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "volunteerBSDFormCustomFields",
+          "name": "Volunteer BSD Form Custom Fields",
+          "type": "Object",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "stateSpecificResultContent",
+          "name": "State-Specific Result Content",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "votingTypeFallbacks",
+          "name": "Voting Type Fallbacks",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "contentReferences",
+          "name": "Content References",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "voterEducation",
+        "type": "ContentType",
+        "createdAt": "2020-03-13T17:22:45.173Z",
+        "updatedAt": "2020-03-20T16:04:37.966Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 84,
+        "publishedAt": "2020-03-20T16:04:37.966Z",
+        "firstPublishedAt": "2020-03-13T17:22:45.373Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 42,
+        "version": 85,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "[Page] Voter Education",
+      "description": "",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "headingButtonLinkCta",
+          "name": "Heading Button Link CTA",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "headingButtonLinkUrl",
+          "name": "Heading Button Link URL",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bsdFormId",
+          "name": "BSD Form Id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "formCallToAction",
+          "name": "Form Call To Action",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "formSubmitButtonText",
+          "name": "Form Submit Button Text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "formPostSubmissionMessage",
+          "name": "Form Post-Submission Message",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "votingTypeHeading",
+          "name": "Voting Type Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "onPrimaryDayHeading",
+          "name": "On Primary Day Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "onPrimaryDayContent",
+          "name": "On Primary Day Content",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voteEarlyHeading",
+          "name": "Vote Early Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voteEarlyContent",
+          "name": "Vote Early Content",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voteByMailHeading",
+          "name": "Vote By Mail Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voteByMailContent",
+          "name": "Vote By Mail Content",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "registeringToVoteHeading",
+          "name": "Registering To Vote Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "registeringToVoteContent",
+          "name": "Registering To Vote Content",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "whoCanVoteHeading",
+          "name": "Who Can Vote Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "whoCanVoteContent",
+          "name": "Who Can Vote Content",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voterIdRequirementsHeading",
+          "name": "Voter ID Requirements Heading",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "voterIdRequirementsContent",
+          "name": "Voter ID Requirements Content",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "frequentlyAskedQuestionsTitle",
+          "name": "Frequently Asked Questions Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "frequentlyAskedQuestionsContent",
+          "name": "Frequently Asked Questions Content",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "validations": [
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "votingTypesOrdering",
+          "name": "Voting Types Ordering",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "primary-day",
+                  "vote-early",
+                  "vote-by-mail"
+                ],
+                "message": "Accepts on 'primary-day', 'vote-early', 'vote-by-mail'"
+              }
+            ]
+          }
+        },
+        {
+          "id": "requirementsOrdering",
+          "name": "Requirements Ordering",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "voter-registration",
+                  "voter-id-requirements",
+                  "who-can-vote"
+                ],
+                "message": "Accepts only 'voter-registration', 'voter-id-requirements', 'who-can-vote'"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2020-03-13T23:08:42.805Z",
+        "updatedAt": "2020-03-20T17:19:35.334Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 57,
+        "publishedAt": "2020-03-20T17:19:35.334Z",
+        "firstPublishedAt": "2020-03-13T23:08:43.119Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 29,
+        "version": 58,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "displayField": "internalTitle",
+      "name": "Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalTitle",
+          "name": "Internal Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "templateName",
+          "name": "Template Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "path",
+          "name": "Path",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "contentType",
+          "name": "Content Type",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "pageCallsLanding",
+                "pageCampaignHomepage",
+                "pageCampaignLivestream",
+                "pageContentDetail",
+                "pageCustomForm",
+                "pageDonorWall",
+                "pageJoinUs",
+                "pageLivestream",
+                "pageMeetElizabeth",
+                "pagePlanDetail",
+                "pagePlansLanding",
+                "pledgeCard",
+                "pagePolicyCalculator",
+                "pagePollingPlaceLocator",
+                "pageQuiz",
+                "pageScrollytelling",
+                "pageToolkitDetail",
+                "pageToolkitGallery",
+                "pageToolkitLanding",
+                "voterEducation"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "searchTags",
+          "name": "Search Tags",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "metaTitle",
+          "name": "Meta Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "metaDescription",
+          "name": "Meta Description",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "metaImage",
+          "name": "Meta Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5ay5mz6w96uq",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 56,
+        "createdAt": "2020-03-05T19:27:35.235Z",
+        "createdBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-20T16:04:38.635Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "pollingLocatorVotingType",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "votingType",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "expiresAt",
+          "settings": {
+            "ampm": "24",
+            "format": "timeZ",
+            "helpText": "The voting type will not display after this date."
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "votingPeriodStartTime",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "votingPeriodEndTime",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subAnchorDescription",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "descriptionSingleResult",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "descriptionMultipleResults",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voteCardHeading",
+          "settings": {
+            "helpText": "Use {{INDEX}} for the index number of the field"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voteCardButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "datesHoursOverride",
+          "settings": {
+            "helpText": "Use {{DATES_HOURS}} to inject the date time info from pollaris"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "dateTimeOverride",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "callsToAction",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voterEducationHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voterEducation",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "formLocationSelectText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "showNoDataFallbackCard",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "disableSelectionIfNoData",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "noDataFallbackText",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "noDataFallbackButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voteByMailContent",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5ay5mz6w96uq",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 56,
+        "createdAt": "2020-03-05T19:27:35.509Z",
+        "createdBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-20T16:04:38.618Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "stateSpecificPollingPlaceContentModule",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "whitelisted",
+          "settings": {
+            "helpText": "Only true if all states in the list have met all data-related requirements from organizing tech.",
+            "trueLabel": "True",
+            "falseLabel": "False"
+          },
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "emailBelowFormCTA",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "states",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resultTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resultSubHeaderForSingleVoteType",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "userLocation",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "customLocationNamePrefix",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "belowMapCTAText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "belowMapCTAUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "timeOfEvent",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sendToSelfFormTitleOverride",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "votingTypes",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "dayOfVotingExpiry",
+          "settings": {
+            "ampm": "24",
+            "format": "timeZ"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sendToSelfFormVotingTypeText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sendToSelfFormLocationSelectText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "fallbackFormOverride",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5ay5mz6w96uq",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 56,
+        "createdAt": "2020-03-05T19:27:34.926Z",
+        "createdBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-20T16:04:40.380Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "pagePollingPlaceLocator",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "copyUrl",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "errorState",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "issuesVerb",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resultTitleFallback",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sharePrompt",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "googleErrors",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "emailBSDFormID",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "entryFormLabel",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "fallbackPrompt",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "issuesFormBody",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resultBackText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "defaultResource",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resultWhenLabel",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resultWhereLabel",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "showMoreLocationsText",
+          "settings": {
+            "helpText": "Use {{INCREMENT}} to inject the increment number"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "showMoreLocationsIncrement",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "submitButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "twitterShareText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "emailBelowFormCTA",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "facebookShareText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "volunteerBsdFormId",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sendToSelfFormTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sendToSelfFormButton",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "mobileFooterSendToSelfText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "mobileFooterBackToTopText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "emailBSDFormCustomFields",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "volunteerBSDFormCustomFields",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "stateSpecificResultContent",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "votingTypeFallbacks",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contentReferences",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5ay5mz6w96uq",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 53,
+        "createdAt": "2020-03-13T17:22:45.455Z",
+        "createdBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-20T16:04:38.635Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "voterEducation",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "headingButtonLinkCta",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "headingButtonLinkUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bsdFormId",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "formCallToAction",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "formSubmitButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "formPostSubmissionMessage",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "votingTypeHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "onPrimaryDayHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "onPrimaryDayContent",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voteEarlyHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voteEarlyContent",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voteByMailHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voteByMailContent",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "registeringToVoteHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "registeringToVoteContent",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "whoCanVoteHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "whoCanVoteContent",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voterIdRequirementsHeading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "voterIdRequirementsContent",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "frequentlyAskedQuestionsTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "frequentlyAskedQuestionsContent",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "votingTypesOrdering",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "requirementsOrdering",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5ay5mz6w96uq",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 41,
+        "createdAt": "2020-03-13T23:08:43.206Z",
+        "createdBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-20T17:19:35.628Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "templateName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "path",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contentType",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "searchTags",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "metaTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "metaDescription",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "metaImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "6Bjoc1MzGXcaTheSY7SkZ9",
+        "type": "Entry",
+        "createdAt": "2020-03-13T23:08:47.830Z",
+        "updatedAt": "2020-03-20T17:21:37.398Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 72,
+        "publishedAt": "2020-03-20T17:21:37.398Z",
+        "firstPublishedAt": "2020-03-14T00:31:19.236Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 25,
+        "version": 73,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "California Voter Education"
+        },
+        "templateName": {
+          "en-US": "voter-education"
+        },
+        "path": {
+          "en-US": "/vote/california",
+          "es-MX": "/votar/california"
+        },
+        "contentType": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "64KsPu0I1tj5wpdkkEGCy0"
+            }
+          }
+        },
+        "metaTitle": {
+          "en-US": "How To Vote In California | Elizabeth Warren",
+          "es-MX": "Como votar en California | Elizabeth Warren"
+        },
+        "metaDescription": {
+          "en-US": "Learn more about how to vote for Elizabeth during the primary.",
+          "es-MX": "Aprende más sobre cómo votar por Elizabeth durante las primarias."
+        },
+        "metaImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5d0nnvpaSMH7PkdLzpIkie"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "64KsPu0I1tj5wpdkkEGCy0",
+        "type": "Entry",
+        "createdAt": "2020-03-13T23:14:56.055Z",
+        "updatedAt": "2020-03-20T22:01:15.651Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 51,
+        "publishedAt": "2020-03-20T22:01:15.651Z",
+        "firstPublishedAt": "2020-03-13T23:14:59.256Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 26,
+        "version": 52,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "voterEducation"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "How To Vote in California",
+          "es-MX": "Como votar en California"
+        },
+        "headingButtonLinkCta": {
+          "en-US": "Find your polling location or vote center",
+          "es-MX": "Encuentra tu sitio o lugar de votación"
+        },
+        "headingButtonLinkUrl": {
+          "en-US": "/vote",
+          "es-MX": "https://elizabethwarren.com/votar"
+        },
+        "bsdFormId": {
+          "en-US": "website-voter-education"
+        },
+        "formCallToAction": {
+          "en-US": "Send this information to yourself so we can remind you closer to your Primary Date.",
+          "es-MX": "Envíate esta información a ti mismo para que podamos recordarte antes del día de la elección primaria. "
+        },
+        "formSubmitButtonText": {
+          "en-US": "Submit",
+          "es-MX": "Someter"
+        },
+        "formPostSubmissionMessage": {
+          "en-US": "Thank you",
+          "es-MX": "¡Gracias!"
+        },
+        "votingTypeHeading": {
+          "en-US": "Voting Options",
+          "es-MX": "Maneras de votar"
+        },
+        "onPrimaryDayHeading": {
+          "en-US": "Voting on Primary Day | March 3rd",
+          "es-MX": "Votar el día de la elección primaria | el 3 de marzo"
+        },
+        "onPrimaryDayContent": {
+          "en-US": "On Primary Day, polls will be open from 7:00 AM PT to 8:00 PM PT. If you're in line when the polls close don't leave, you can still vote!\n\n[Find your polling location or vote center](/vote \"Find your polling location or vote center\") \n\n__Most California voters are not required to show identification at their polling place.__ \n\nHowever, if you are voting for the first time and you registered to vote by mail or online without including your CA driver’s license number, CA non-driver’s license ID number, or the last four digits of your Social Security number, you must bring identification with you to the polls. \n\n[See Voter ID Requirements below for more information](#voter-id-requirements)",
+          "es-MX": "El día de las elecciones primarias, los lugares de votación estarán abiertos desde las 7:00 AM PT hasta las 8:00 PM PT. Si estás en línea antes de que cierre tu lugar de votación, podrás votar. \n\n[Encuentra tu sitio o lugar de votación](https://voterstatus.sos.ca.gov/ES) \n\n__En California, no se les requiere a la mayoría de los votantes presentar una identificación en su lugar de votación.__ \n\nPero, si estás votando por primera vez y  te registraste para votar por correo o en línea sin proporcionar tu número de licencia de manejar de California, el número de tu identificación del estado de California o los últimos cuatro números de tu seguro social, debes traer una identificación contigo a tu lugar de votación. \n\n[Consulta los requisitos de identificación de votante a continuación](#voter-id-requirements)"
+        },
+        "voteEarlyHeading": {
+          "en-US": "In-Person Early Voting",
+          "es-MX": "Votar de manera temprana en persona"
+        },
+        "voteEarlyContent": {
+          "en-US": "You can vote early in person at your county elections office beginning on __2/3/2020__.\n\nIn addition, some counties in California also have in-person early voting before Primary Day at voting centers around the county between __2/22/2020__ and __3/2/2020__. [Check with your county election office to determine if this is available](https://www.sos.ca.gov/elections/voting-resources/county-elections-offices \"Check with your county election office to determine if this is available\")\n",
+          "es-MX": "Puedes votar de manera temprana en persona en la oficina electoral de tu condado comenzando el __3 de febrero del 2020__.\n\nAdicionalmente, algunos condados en California también tienen la opción de votar de manera temprana, en persona antes del día de la primaria en los centros de votación alrededor del condado entre el __22 de febrero del 2020__ y el __2 de marzo del 2020__. [Consulta con la oficina electoral de tu condado para determinar si esto es una opción para ti](https://www.sos.ca.gov/elections/voting-resources/county-elections-offices \"Check with your county election office to determine if this is available\")"
+        },
+        "voteByMailHeading": {
+          "en-US": "Voting by Mail",
+          "es-MX": "Votar por correo"
+        },
+        "voteByMailContent": {
+          "en-US": "All voters can vote prior to Primary Day by requesting a vote-by-mail ballot.\n\nMail applications for a vote-by-mail ballot must be received by __2/25/2020__. After that, you can continue to apply for a vote-by-mail ballot in person at your county elections office.\n\nThe first day to vote-by-mail is __2/3/2020__. Vote-by-mail ballots must be postmarked on or before __3/3/2020__ and received on or before __3/6/2020__.\n\nYou can also drop off your vote-by-mail ballot in person at your county elections office, any vote center or polling place in the state, or any ballot drop off location. Ballots dropped off in person must be received by 8:00 PM on __3/3/2020__.",
+          "es-MX": "Las solicitudes por correo postal para una boleta de votación por correo deben recibirse antes del __25 de febrero del 2020__. Después de esa fecha, puedes solicitar una boleta de votación por correo en persona en la oficina electoral de tu condado.\n\nEl primer día para votar por correo es el __3 de febrero del 2020__. Las boletas de votación por correo deben estar mataselladas antes del __3 de marzo del 2020__ y ser recibidas antes del __6 de marzo del 2020__.\n\nTambién puedes entregar tu boleta de votación por correo en persona en la oficina electoral de tu condado, en cualquier centro de votación o lugar de votación en el estado, o en cualquier lugar de entrega de boletas. Las boletas entregadas en persona deben recibirse antes de las 8:00 PM el __3 de marzo del 2020__."
+        },
+        "registeringToVoteHeading": {
+          "en-US": "Registering to Vote",
+          "es-MX": "Cómo registrarte para votar"
+        },
+        "registeringToVoteContent": {
+          "en-US": "You can register to vote:\n  - [Online](https://registertovote.ca.gov/ \"Online\")\n  - [By mail](https://www.sos.ca.gov/elections/voter-registration/ \"By mail\")\n  - In person\n\nYou can register online until 11:59 PM on __2/18/2020__. A paper application must be delivered in person to your county elections office or postmarked by __2/18/2020__. \n\nYou can continue to register after __2/18/2020__, but if you register to vote online after __2/18/2020__, you must bring your email confirmation with you to vote in person. [See Conditional Voter Registration for more information.](#what-is-conditional-voter-registration? \"See Conditional Voter Registration for more information.\") \n\nIn order to switch parties, you must re-register to vote by submitting a voter registration application online, by mail, or in person. You are then able to request a Democratic ballot.\n\nYou can still vote in person on Primary Day if you haven’t registered to vote, want to request a Democratic ballot, or want to switch parties. You can complete the conditional voter registration process at your county elections office, polling place, or vote center.\n\n[See Conditional Voter Registration for more information.](#what-is-conditional-voter-registration? \"See Conditional Voter Registration for more information.\") ",
+          "es-MX": "Puedes registrarte para votar:\n  - [En línea](https://registertovote.ca.gov/)\n  - [Por correo postal](https://www.sos.ca.gov/elections/voter-registration/)\n  - En persona\n\nPuedes registrarte en línea hasta las 11:59 PM del __18 de febrero del 2020__. Una solicitud impresa debe ser entregada en persona a la oficina electoral de tu condado o por correo postal, matasellada, antes del __18 de febrero del 2020__.\n\nPuedes registrarte para votar después del __18 de febrero del 2020__, pero si te registras para votar en línea después del __18 de febrero del 2020__, debes traer la confirmación que recibiste por correo electrónico contigo para votar en persona. [Consulta la sección sobre el registro de votante condicional para obtener más información.](#what-is-conditional-voter-registration?) \n\nPara cambiar tu afiliación política, debes volver a registrarte para votar sometiendo una solicitud de registro en línea, por correo postal o en persona. Después, podrás solicitar una boleta demócrata.\n\nTodavía puedes votar en persona el día de la primaria si no te has registrado para votar, si deseas solicitar una boleta demócrata o si deseas cambiar tu afiliación política. Puedes completar el proceso de registro de votante condicional en la oficina electoral de tu condado, lugar de votación o centro de votación. [Consulta la sección de registro de votante condicional para más información.](#what-is-conditional-voter-registration?) "
+        },
+        "whoCanVoteHeading": {
+          "en-US": "Who Can Vote",
+          "es-MX": "Quién puede votar"
+        },
+        "whoCanVoteContent": {
+          "en-US": "You must be 18 years old by Primary Day to vote.\n\nYou must be a U.S. Citizen.\n\nTo participate in the Democratic primary, you must either: \n\n1. Be registered as a Democrat, or\n2. Be registered as \"No Party Preference\" (NPP). NPP voters must request a Democratic ballot in the following ways:\n  3. By calling your county elections office, or\n  4. By requesting a Democratic ballot at a county elections office, polling place, or vote center\n\nYou must be a California resident. There is no requirement for how long you have to be a resident of California in order to vote in the primary. You can vote even if you are or were temporarily absent from the state, provided you intend or intended to return to the state.\n\n## Voting with a felony conviction\n\nIf you have been convicted of a felony, you are eligible to vote if you have completed your term of prison and parole, even if you are on probation. You will need to re-register to vote. ",
+          "es-MX": "Debes tener 18 años de edad antes del día de la primaria para poder votar.\n\nDebes ser ciudadano de los Estados Unidos.\n\nPara participar en la primaria demócrata, debes: \n\n1. Estar registrado como demócrata, o\n2. Estar registrado con la afiliación  \"Sin ningún partido político\" (NPP). Los votantes NPP deben solicitar una boleta demócrata de las siguientes maneras:\n  3. Al llamar a la oficina electoral de su condado, o\n  4. Al solicitar una boleta demócrata en una oficina electoral del condado, lugar de votación o centro de votación\n\nDebes ser residente de California. No hay un requisito que determine cuánto tiempo debes ser residente de California para poder votar en la primaria. Puedes votar incluso si estás o estuviste ausente temporalmente del estado, siempre que tengas la intención de regresar al estado.\n\n## ¿Cómo voto si he sido convicto por un delito grave?\n\nSi has sido convicto por un delito grave, eres elegible para votar si has completado tu sentencia de cárcel y tiempo de libertad condicional, incluso si estás cumpliendo una condena condicional. Pero tendrás que volver a registrarte para votar. "
+        },
+        "voterIdRequirementsHeading": {
+          "en-US": "Voter ID Requirements",
+          "es-MX": "Requisitos de identificación de votante"
+        },
+        "voterIdRequirementsContent": {
+          "en-US": "In most cases, California voters are not required to show identification at their polling place. \n\nHowever, if you are voting for the first time and you registered to vote by mail or online without including your CA driver’s license number, CA non-driver’s license ID number, or the last four digits of your Social Security number, you must bring identification with you to the polls.  \n\nIf you registered to vote by mail or online and did not provide a copy of your ID or adequate identifying information, you must provide one of the following forms of ID before voting: \n1. (1) a current and valid photo ID, such as a driver's license, state ID card, employee ID card, student ID card, or credit or debit card; or \n2. (2) a recent copy of a document showing the name and address of the voter, such as a utility bill, bank statement, government check, government paycheck; or a document issued by a government agency. \n\n[A complete list of acceptable forms of ID is available here.](https://elections.cdn.sos.ca.gov/regulations/hava_id_regs_from_barclays_3_3_06.pdf \"A complete list of acceptable forms of ID is available here.\")\n\n\n[Official Voting Website](https://www.sos.ca.gov/elections/voting-resources/voting-california/where-and-how-vote/ \"Official Voting Website\")\n\nIf you have any questions about the voting process, email vote@elizabethwarren.com",
+          "es-MX": "En la mayoría de los casos, los votantes de California no están obligados a mostrar identificación en su lugar de votación. \n\nSin embargo, si vas a votar por primera vez y te registraste para votar por correo o en línea sin incluir tu número de licencia de manejar de California, el número de tarjeta de identificación del estado de California o los últimos cuatro dígitos de tu número de seguro social, debes traer una identificación contigo a tu lugar de votación.  \n\nSi te registraste para votar por correo o en línea y no proporcionaste una copia de tu identificación o información de identificación adecuada, debes proporcionar una de las siguientes formas de identificación antes de votar: \n1. (1) una identificación con foto actual y válida, como una licencia de manejar, tarjeta de identificación estatal, tarjeta de identificación de empleado, tarjeta de identificación de estudiante o tarjeta de crédito o débito; o \n2. (2) una copia reciente de un documento que muestre el nombre y la dirección del votante, como una factura de servicios públicos, extracto bancario, cheque del gobierno, cheque de pago del gobierno; o un documento emitido por una agencia gubernamental. \n\n[Una lista completa de formas aceptables de identificación está disponible aquí.](https://elections.cdn.sos.ca.gov/regulations/hava_id_regs_from_barclays_3_3_06.pdf \"A complete list of acceptable forms of ID is available here.\")\n\n\n[Sitio web oficial de votación](https://www.sos.ca.gov/elections/voting-resources/voting-california/where-and-how-vote/ \"Official Voting Website\")\n\nSi tienes alguna pregunta sobre el proceso de votación, por favor envía un correo electrónico a vote@elizabethwarren.com"
+        },
+        "frequentlyAskedQuestionsTitle": {
+          "en-US": "Frequently Asked Questions",
+          "es-MX": "Preguntas frequentes"
+        },
+        "frequentlyAskedQuestionsContent": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "What is conditional voter registration?",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-1"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Eligible citizens who need to register to vote, or re-register (including switching parties), after ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "2/18/2020",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " can complete the conditional voter registration process at their county elections office, polling place, or vote center up to and including Primary Day. Voters who register to vote online after ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "2/18/2020",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " will need to bring their email confirmation with them to vote.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          },
+          "es-MX": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "¿Qué es el registro de votante condicional?",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-1"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ciudadanos elegibles que necesiten registrarse para votar o volver a registrarse (incluyendo el cambio de afiliación política), después del ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "18 de febrero del 2020",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", pueden completar el proceso de registro de votante condicional en la oficina electoral de su condado, el lugar de votación o el centro de votación hasta el día de la primaria. Los votantes que se registren para votar en línea después del ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "18 de febrero del 2020",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " deberán traer la confirmación que recibieron por correo electrónico para votar.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "jjYl0rDace54kxC9A37SF",
+        "type": "Entry",
+        "createdAt": "2020-03-14T00:36:29.059Z",
+        "updatedAt": "2020-03-20T18:18:50.203Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 42,
+        "publishedAt": "2020-03-20T18:18:50.203Z",
+        "firstPublishedAt": "2020-03-14T19:16:17.841Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 16,
+        "version": 43,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pagePollingPlaceLocator"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Vote Polling Locator"
+        },
+        "type": {
+          "en-US": "pollingLocator"
+        },
+        "title": {
+          "en-US": "Learn how to vote for Elizabeth Warren",
+          "es-MX": "Aprende como votar por Elizabeth Warren"
+        },
+        "copyUrl": {
+          "en-US": {
+            "label": "Copy url:",
+            "afterVerb": "Copied!"
+          },
+          "es-MX": {
+            "label": "Copiar enlace:",
+            "afterVerb": "Copiado!"
+          }
+        },
+        "errorState": {
+          "en-US": "Something went wrong, enter your full street address, city, state, and zip code.",
+          "es-MX": "Hubo un error. Ingresa tu dirección completa, ciudad, estado y código postal."
+        },
+        "issuesVerb": {
+          "en-US": "I Will:",
+          "es-MX": "Voy a:"
+        },
+        "description": {
+          "en-US": "Enter your full address to confirm your caucus or polling place.",
+          "es-MX": "Ingresa tu dirección completa para encontrar tu sitio o lugar de votación."
+        },
+        "resultTitleFallback": {
+          "en-US": "HOW TO SUPPORT ELIZABETH IN {{STATE}}"
+        },
+        "sharePrompt": {
+          "en-US": "Thanks! Now share with your friends so they can confirm their caucus or voting location, too.",
+          "es-MX": "¡Gracias! Comparte con tus amigos para que ellos puedan confirmar sus lugares de votación también."
+        },
+        "googleErrors": {
+          "en-US": {
+            "NO_STRING": "Please enter an address to begin",
+            "NO_LOCATION": "Please enter your full street address, city, state, and zip",
+            "GOOGLE_ERROR": "There was an error with our service, please try again soon"
+          },
+          "es-MX": {
+            "NO_STRING": "Please enter an address to begin",
+            "NO_LOCATION": "Ingresa tu dirección completa, ciudad, estado y código postal",
+            "GOOGLE_ERROR": "There was an error with our service, please try again soon"
+          }
+        },
+        "emailBSDFormID": {
+          "en-US": "web-poll-tool"
+        },
+        "entryFormLabel": {
+          "en-US": "Street Address",
+          "es-MX": "Dirección"
+        },
+        "fallbackPrompt": {
+          "en-US": "If you’re unable to find your polling or caucus  location, please try again below.",
+          "es-MX": "Si no puedes encontrar tu sitio o lugar de votación, por favor intenta otra vez."
+        },
+        "issuesFormBody": {
+          "en-US": "Sign up to volunteer and we’ll follow up with how to get started.",
+          "es-MX": "Regístrate para ser voluntario y nos comunicaremos contigo con detalles de cómo comenzar."
+        },
+        "resultBackText": {
+          "en-US": "Look up a different address",
+          "es-MX": "Buscar una dirección diferente"
+        },
+        "defaultResource": {
+          "en-US": "NATIONAL"
+        },
+        "resultWhenLabel": {
+          "en-US": "When:",
+          "es-MX": "Cuando:"
+        },
+        "resultWhereLabel": {
+          "en-US": "Where:",
+          "es-MX": "Dónde:"
+        },
+        "showMoreLocationsText": {
+          "en-US": "Load {{INCREMENT}} more locations"
+        },
+        "showMoreLocationsIncrement": {
+          "en-US": 7
+        },
+        "submitButtonText": {
+          "en-US": "Look Up",
+          "es-MX": "BUSCAR"
+        },
+        "twitterShareText": {
+          "en-US": "I'm on @TeamWarren! Join us — look up your caucus or polling location here:",
+          "es-MX": "Estoy con @TeamWarren! Únete a nosotros: busca tu sitio o lugar de votación aquí:"
+        },
+        "emailBelowFormCTA": {
+          "en-US": " ",
+          "es-MX": "Si eres un votante que estará fuera de la ciudad el día del caucus, ¡envía un correo electrónico a [iowa@elizabethwarren.com](mailto:iowa@elizabethwarren.com)  para aprender cómo puedes participar en el caucus para apoyar a Elizabeth!"
+        },
+        "facebookShareText": {
+          "en-US": "I'm on Team Warren! Join us — look up your caucus or polling location here:",
+          "es-MX": "¡Estoy en el Equipo Warren! Únete al movimiento de base comunitaria:"
+        },
+        "volunteerBsdFormId": {
+          "en-US": "volunteer-web-poll-tool"
+        },
+        "sendToSelfFormTitle": {
+          "en-US": "Send this information to yourself! We'll also send you reminders closer to your Primary Day.",
+          "es-MX": "¡Te mantendremos informado si algo cambia! Haznos saber que estás en nuestro equipo aquí:"
+        },
+        "sendToSelfFormButton": {
+          "en-US": "Submit",
+          "es-MX": "Someter"
+        },
+        "mobileFooterSendToSelfText": {
+          "en-US": "Send this to yourself"
+        },
+        "mobileFooterBackToTopText": {
+          "en-US": "Back to top"
+        },
+        "emailBSDFormCustomFields": {
+          "en-US": {
+            "language": "custom-16616",
+            "pollingZip": "custom-16069",
+            "precinctId": "custom-16063",
+            "resultsURL": "custom-17132",
+            "votingType": "custom-17131",
+            "pollingCity": "custom-16067",
+            "timeOfEvent": "custom-16065",
+            "pollingState": "custom-16068",
+            "nameOfLocation": "custom-16064",
+            "pollingAddress": "custom-16066",
+            "pollarisSearchId": "custom-17240",
+            "voterEducationUrl": "custom-18207",
+            "votingTypeEndTime": "custom-18123",
+            "pollarisLocationId": "custom-17240",
+            "votingTypeStartTime": "custom-18152",
+            "pollarisAnalyticsSearchId": "custom-17816"
+          }
+        },
+        "volunteerBSDFormCustomFields": {
+          "en-US": {
+            "events": "custom-16180",
+            "volunteerCheckboxes": [
+              "Knock Doors",
+              "Call Voters"
+            ]
+          },
+          "es-MX": {
+            "events": "custom-16180",
+            "volunteerCheckboxes": [
+              "Visitar a los votantes en sus hogares",
+              "Hacer llamadas a los votantes"
+            ]
+          }
+        },
+        "stateSpecificResultContent": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "50fFdO36b6IQJbQdIlVYkp"
+              }
+            }
+          ]
+        },
+        "votingTypeFallbacks": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6k8kxtdqd7dXlavy8W0Zv0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "n8hdmPiEES3bIsMevjBA9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4dy2h2vWRiv8k4njOjmnaa"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2O1o49x3i2lUTrFPDJPiDt"
+              }
+            }
+          ]
+        },
+        "contentReferences": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6Bjoc1MzGXcaTheSY7SkZ9"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "50fFdO36b6IQJbQdIlVYkp",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:27:28.721Z",
+        "updatedAt": "2020-03-20T16:04:51.344Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 43,
+        "publishedAt": "2020-03-20T16:04:51.344Z",
+        "firstPublishedAt": "2020-03-14T02:27:32.982Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 20,
+        "version": 44,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "stateSpecificPollingPlaceContentModule"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "California"
+        },
+        "whitelisted": {
+          "en-US": true
+        },
+        "states": {
+          "en-US": [
+            "CA"
+          ]
+        },
+        "resultTitle": {
+          "en-US": "HOW TO VOTE FOR ELIZABETH IN CALIFORNIA"
+        },
+        "userLocation": {
+          "en-US": "for {{STREET_NUMBER}} {{STREET}}, {{CITY}}, {{STATE}} {{ZIP}}."
+        },
+        "votingTypes": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6P943Hqk4y9Ey9JREFW8h9"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3AqvxPrI9YIZqWp9BObkb7"
+              }
+            }
+          ]
+        },
+        "fallbackFormOverride": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6Bjoc1MzGXcaTheSY7SkZ9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "6P943Hqk4y9Ey9JREFW8h9",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:38:05.365Z",
+        "updatedAt": "2020-03-20T16:04:53.274Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 40,
+        "publishedAt": "2020-03-20T16:04:53.274Z",
+        "firstPublishedAt": "2020-03-14T02:38:06.158Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 15,
+        "version": 41,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pollingLocatorVotingType"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Day of | Cali "
+        },
+        "votingType": {
+          "en-US": "polling_locations"
+        },
+        "name": {
+          "en-US": "Where To Vote On Primary Day"
+        },
+        "subAnchorDescription": {
+          "en-US": "The California primary is on March 3rd. Confirm where you can vote below."
+        },
+        "descriptionSingleResult": {
+          "en-US": "You can vote for Elizabeth at the location below."
+        },
+        "descriptionMultipleResults": {
+          "en-US": "There are multiple locations where you can vote for Elizabeth. Choose one of the options below."
+        },
+        "voteCardHeading": {
+          "en-US": "Your Voting Location"
+        },
+        "voteCardButtonText": {
+          "en-US": "I'll Vote Here"
+        },
+        "callsToAction": {
+          "en-US": "If you have any questions about voting, please email california@elizabethwarren.com. \n\n[Learn more about voting in California by clicking here](https://elizabethwarren.com/vote/california \"Learn more about voting in California by clicking here\")"
+        },
+        "showNoDataFallbackCard": {
+          "en-US": true
+        },
+        "disableSelectionIfNoData": {
+          "en-US": true
+        },
+        "noDataFallbackText": {
+          "en-US": "Something went wrong. Please email vote@elizabethwarren.com — someone from our team will help you find where to vote!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "6k8kxtdqd7dXlavy8W0Zv0",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:46:09.876Z",
+        "updatedAt": "2020-03-20T16:04:53.081Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2020-03-20T16:04:53.081Z",
+        "firstPublishedAt": "2020-03-14T02:46:13.188Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pollingLocatorVotingType"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Polling Locations Generic Fallback"
+        },
+        "votingType": {
+          "en-US": "polling_locations"
+        },
+        "name": {
+          "en-US": "Day of Voting"
+        },
+        "voteCardHeading": {
+          "en-US": "Day Of Location #{{INDEX}}"
+        },
+        "voteCardButtonText": {
+          "en-US": "I want to vote here"
+        },
+        "voterEducationHeading": {
+          "en-US": "Rules and Eligibility:"
+        },
+        "showNoDataFallbackCard": {
+          "en-US": true
+        },
+        "disableSelectionIfNoData": {
+          "en-US": true
+        },
+        "noDataFallbackText": {
+          "en-US": "Something went wrong. Please email vote@elizabethwarren.com — someone from our team will help you find where to vote!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "2cVJtolzU6RhAtg3ozzYnK",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:46:09.925Z",
+        "updatedAt": "2020-03-20T16:04:52.859Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 29,
+        "publishedAt": "2020-03-20T16:04:52.859Z",
+        "firstPublishedAt": "2020-03-14T02:46:13.413Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 15,
+        "version": 30,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pollingLocatorVotingType"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Vote By Mail | California"
+        },
+        "votingType": {
+          "en-US": "vote_by_mail"
+        },
+        "expiresAt": {
+          "en-US": "2020-01-08T00:00-05:00"
+        },
+        "name": {
+          "en-US": "Vote By Mail"
+        },
+        "subAnchorDescription": {
+          "en-US": "All voters can vote prior to Primary Day by requesting a vote-by-mail ballot. "
+        },
+        "descriptionSingleResult": {
+          "en-US": "All voters can vote prior to Primary Day by requesting a vote-by-mail ballot. "
+        },
+        "voteCardButtonText": {
+          "en-US": "I want to vote by mail"
+        },
+        "callsToAction": {
+          "en-US": "[Learn more about how to vote in California.](https://elizabethwarren.com/vote/california \"Learn more about how to vote in California.\")"
+        },
+        "voteByMailContent": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Step 1: Get your ballot",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-1"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Mail applications for a vote-by-mail ballot must be received by 2/25/2020. After that, you can continue to apply for a vote-by-mail ballot in person at your county elections office.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.sos.ca.gov/elections/voter-registration/vote-mail/"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "You can submit an application for a mail in ballot here.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Step 2: Fill out your ballot",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-1"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Remember to vote for Elizabeth Warren!",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Step 3: Submit your ballot",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-1"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The first day to vote-by-mail is 2/3/2020. Vote-by-mail ballots must be postmarked on or before 3/3/2020 and received on or before 3/6/2020.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "You can also drop off your vote-by-mail ballot in person at your county elections office, any vote center or polling place in the state, or any ballot drop off location. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ballots dropped off in person must be received by 8:00 PM on 3/3/2020. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\n\n\n",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "n8hdmPiEES3bIsMevjBA9",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:46:10.041Z",
+        "updatedAt": "2020-03-20T16:04:52.678Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2020-03-20T16:04:52.678Z",
+        "firstPublishedAt": "2020-03-14T02:46:12.464Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pollingLocatorVotingType"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Early Vote Locations Generic Fallback"
+        },
+        "votingType": {
+          "en-US": "early_vote_locations"
+        },
+        "name": {
+          "en-US": "Vote Early In Person"
+        },
+        "voteCardHeading": {
+          "en-US": "Early Vote Location #{{INDEX}}"
+        },
+        "voteCardButtonText": {
+          "en-US": "I want to vote here"
+        },
+        "showNoDataFallbackCard": {
+          "en-US": true
+        },
+        "disableSelectionIfNoData": {
+          "en-US": true
+        },
+        "noDataFallbackText": {
+          "en-US": "Something went wrong. Please email vote@elizabethwarren.com — someone from our team will help you find where to vote!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "4dy2h2vWRiv8k4njOjmnaa",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:46:11.655Z",
+        "updatedAt": "2020-03-20T16:04:52.473Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2020-03-20T16:04:52.473Z",
+        "firstPublishedAt": "2020-03-14T02:46:12.923Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pollingLocatorVotingType"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Vote By Mail Generic Fallback"
+        },
+        "votingType": {
+          "en-US": "vote_by_mail"
+        },
+        "voteCardButtonText": {
+          "en-US": "I want to vote by mail"
+        },
+        "showNoDataFallbackCard": {
+          "en-US": true
+        },
+        "disableSelectionIfNoData": {
+          "en-US": true
+        },
+        "noDataFallbackText": {
+          "en-US": "Something went wrong. Please email vote@elizabethwarren.com — someone from our team will help you find where to vote!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "2O1o49x3i2lUTrFPDJPiDt",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:46:11.734Z",
+        "updatedAt": "2020-03-20T16:04:52.010Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 37,
+        "publishedAt": "2020-03-20T16:04:52.010Z",
+        "firstPublishedAt": "2020-03-14T02:46:12.680Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 38,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pollingLocatorVotingType"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Ballot Dropoff Generic Voting Type"
+        },
+        "votingType": {
+          "en-US": "dropbox_locations"
+        },
+        "voteCardHeading": {
+          "en-US": "Ballot Dropoff Location #{{INDEX}}"
+        },
+        "showNoDataFallbackCard": {
+          "en-US": true
+        },
+        "disableSelectionIfNoData": {
+          "en-US": true
+        },
+        "noDataFallbackText": {
+          "en-US": "Something went wrong. Please email vote@elizabethwarren.com — someone from our team will help you find where to vote!"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "6hLKFpIwyxxNR5CkhWRfct",
+        "type": "Entry",
+        "createdAt": "2020-03-14T02:50:59.212Z",
+        "updatedAt": "2020-03-20T17:21:24.377Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 51,
+        "publishedAt": "2020-03-20T17:21:24.377Z",
+        "firstPublishedAt": "2020-03-14T02:51:00.018Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 20,
+        "version": 52,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Polling Locator"
+        },
+        "templateName": {
+          "en-US": "polling-locator"
+        },
+        "path": {
+          "en-US": "/vote",
+          "es-MX": "/votar"
+        },
+        "contentType": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "jjYl0rDace54kxC9A37SF"
+            }
+          }
+        },
+        "metaTitle": {
+          "en-US": "Caucus or Polling Location | Elizabeth Warren ",
+          "es-MX": "Encuentra tu sitio o lugar de votación | Elizabeth Warren"
+        },
+        "metaDescription": {
+          "en-US": "We’re proud to have you in this fight. Confirm your caucus or polling location!",
+          "es-MX": "Nos alegra tenerte en esta lucha. ¡Confirma tu sitio o lugar de votación!"
+        },
+        "metaImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5d0nnvpaSMH7PkdLzpIkie"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "3AqvxPrI9YIZqWp9BObkb7",
+        "type": "Entry",
+        "createdAt": "2020-03-15T16:08:05.712Z",
+        "updatedAt": "2020-03-20T16:04:51.567Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2020-03-20T16:04:51.567Z",
+        "firstPublishedAt": "2020-03-15T16:08:10.306Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 12,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pollingLocatorVotingType"
+          }
+        }
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Vote Early | Cali"
+        },
+        "votingType": {
+          "en-US": "early_vote_locations"
+        },
+        "name": {
+          "en-US": "Where To Vote Early In Person"
+        },
+        "subAnchorDescription": {
+          "en-US": "Starting 2/3/2020 you can vote early for Elizabeth. See below for more information."
+        },
+        "descriptionSingleResult": {
+          "en-US": "You can vote early for Elizabeth at the location below."
+        },
+        "descriptionMultipleResults": {
+          "en-US": "There are multiple places where you can go to vote early in person. Choose one of the options below."
+        },
+        "voteCardHeading": {
+          "en-US": "Your Early Voting Location"
+        },
+        "voteCardButtonText": {
+          "en-US": "I'll Vote Here"
+        },
+        "callsToAction": {
+          "en-US": "[You can find a list of all county election offices here.](https://www.sos.ca.gov/elections/voting-resources/county-elections-offices \"Check with your county election office to determine if this is available\")\n\n\n\n\nIf you have any questions about voting, please email california@elizabethwarren.com.\n\n"
+        },
+        "showNoDataFallbackCard": {
+          "en-US": true
+        },
+        "disableSelectionIfNoData": {
+          "en-US": true
+        },
+        "noDataFallbackText": {
+          "en-US": "Questions about early voting? Contact your county elections office. They provide election materials in various languages and serve as early voting locations. You can vote early in person at your county elections office beginning on 2/3/2020."
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "4shwYI3POEGkw0Eg6kcyaQ",
+        "type": "Asset",
+        "createdAt": "2020-03-05T19:55:32.478Z",
+        "updatedAt": "2020-03-20T16:04:47.756Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 58,
+        "publishedAt": "2020-03-20T16:04:47.756Z",
+        "firstPublishedAt": "2020-03-05T19:55:42.180Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 59,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Man in the fields"
+        },
+        "description": {
+          "en-US": "Tattooed man walking in a field"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/5ay5mz6w96uq/4shwYI3POEGkw0Eg6kcyaQ/723d1a8143065dd2225d69bf7af42a95/felix-russell-saw-112140.jpg",
+            "details": {
+              "size": 4539181,
+              "image": {
+                "width": 2500,
+                "height": 1667
+              }
+            },
+            "fileName": "felix-russell-saw-112140.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "4NzwDSDlGECGIiokKomsyI",
+        "type": "Asset",
+        "createdAt": "2020-03-05T19:55:32.554Z",
+        "updatedAt": "2020-03-20T16:04:48.207Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 58,
+        "publishedAt": "2020-03-20T16:04:48.207Z",
+        "firstPublishedAt": "2020-03-05T19:55:42.333Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 59,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "City"
+        },
+        "description": {
+          "en-US": "City pictured from the sky"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/5ay5mz6w96uq/4NzwDSDlGECGIiokKomsyI/f3fb06dbfce74e45de6793b57a82ad20/denys-nevozhai-100695.jpg",
+            "details": {
+              "size": 15736986,
+              "image": {
+                "width": 3992,
+                "height": 2992
+              }
+            },
+            "fileName": "denys-nevozhai-100695.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "6Od9v3wzLOysiMum0Wkmme",
+        "type": "Asset",
+        "createdAt": "2020-03-05T19:55:32.556Z",
+        "updatedAt": "2020-03-20T16:04:48.068Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 58,
+        "publishedAt": "2020-03-20T16:04:48.068Z",
+        "firstPublishedAt": "2020-03-05T19:55:42.525Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 19,
+        "version": 59,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Woman with black hat"
+        },
+        "description": {
+          "en-US": "Woman wearing a black hat"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/5ay5mz6w96uq/6Od9v3wzLOysiMum0Wkmme/c7209329bc1244535fba253a9e44b27d/cameron-kirby-88711.jpg",
+            "details": {
+              "size": 7316629,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "cameron-kirby-88711.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "id": "5d0nnvpaSMH7PkdLzpIkie",
+        "type": "Asset",
+        "createdAt": "2020-03-14T00:31:10.023Z",
+        "updatedAt": "2020-03-20T16:04:47.924Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 89,
+        "publishedAt": "2020-03-20T16:04:47.924Z",
+        "firstPublishedAt": "2020-03-14T00:31:15.606Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "publishedCounter": 21,
+        "version": 90,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Join Our Fight",
+          "es-MX": "Únete a nuestra lucha"
+        },
+        "description": {
+          "en-US": "Join Our Fight https://elizabethwarren.com",
+          "es-MX": "Únete a nuestra lucha https://elizabethwarren.com"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/5ay5mz6w96uq/5d0nnvpaSMH7PkdLzpIkie/2fa5367a72ac89956653164bedba336b/EW_homepage_MetaImage_va04.png",
+            "details": {
+              "size": 643176,
+              "image": {
+                "width": 1024,
+                "height": 512
+              }
+            },
+            "fileName": "EW_homepage_MetaImage_va04.png",
+            "contentType": "image/png"
+          },
+          "es-MX": {
+            "url": "//images.ctfassets.net/5ay5mz6w96uq/5d0nnvpaSMH7PkdLzpIkie/3d219a7e1956718214cc1321e30e897e/EW_homepage_MetaImage_spanish_va01.png",
+            "details": {
+              "size": 647614,
+              "image": {
+                "width": 1024,
+                "height": 512
+              }
+            },
+            "fileName": "EW_homepage_MetaImage_spanish_va01.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "U.S. English",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "3mLuz2b3MnvLt5bPbnZ1kF",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "createdAt": "2020-03-05T18:09:51Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedAt": "2020-03-05T19:55:28Z"
+      }
+    },
+    {
+      "name": "Spanish (Mexico)",
+      "code": "es-MX",
+      "fallbackCode": "en-US",
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": true,
+      "sys": {
+        "type": "Locale",
+        "id": "7eW0bSQVmhypCJBfogJhtL",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5ay5mz6w96uq"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "createdAt": "2020-03-13T22:21:37Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3bCnOUBuZJ0KhZYjLCJPSu"
+          }
+        },
+        "updatedAt": "2020-03-13T22:21:37Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+  ]
+}

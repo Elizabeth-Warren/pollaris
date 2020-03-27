@@ -1,0 +1,7 @@
+{
+  "name": "Pollaris Frontend",
+  "description": "A application for finding electoral polling locations.",
+  "keywords": ["pollaris", "polling locator"],
+  "repository": "https://github.com/Elizabeth-Warren/pollaris",
+  "success_url": "/"
+}

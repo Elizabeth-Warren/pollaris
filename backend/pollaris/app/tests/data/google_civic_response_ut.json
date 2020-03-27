@@ -1,0 +1,97 @@
+{
+  "kind": "civicinfo#voterInfoResponse",
+  "election": {
+    "id": "4910",
+    "name": "Utah Presidential Primary Election",
+    "electionDay": "2020-03-03",
+    "ocdDivisionId": "ocd-division/country:us/state:ut"
+  },
+  "normalizedInput": {
+    "line1": "1985 South 1200 East",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84105"
+  },
+  "pollingLocations": [
+    {
+      "address": {
+        "locationName": "Salt Lake County Govt Bldg",
+        "line1": "2001 S State Street (100 E)",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84190"
+      },
+      "notes": "",
+      "pollingHours": "",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "earlyVoteSites": [
+    {
+      "address": {
+        "line1": "600 S 700 E, 2nd Floor Near Rodizio Grill",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84102"
+      },
+      "notes": "",
+      "pollingHours": "02/26/2020 02:00 PM to 06:00 PM<br>02/27/2020 02:00 PM to 06:00 PM<br>02/28/2020 02:00 PM to 06:00 PM<br>03/02/2020 02:00 PM to 06:00 PM<br>",
+      "name": "Trolley Square (EV) PM",
+      "voterServices": "",
+      "startDate": "2020-02-26",
+      "endDate": "2020-03-02",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "line1": "2001 S State St (100 E)",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84114"
+      },
+      "notes": "",
+      "pollingHours": "02/18/2020 08:00 AM to 05:00 PM<br>02/19/2020 08:00 AM to 05:00 PM<br>02/20/2020 08:00 AM to 05:00 PM<br>02/21/2020 08:00 AM to 05:00 PM<br>02/24/2020 08:00 AM to 05:00 PM<br>02/25/2020 08:00 AM to 05:00 PM<br>02/26/2020 08:00 AM to 05:00 PM<br>02/27/2020 08:00 AM to 05:00 PM<br>02/28/2020 08:00 AM to 05:00 PM<br>03/02/2020 08:00 AM to 05:00 PM<br>",
+      "name": "SLCO Government Center (EV)",
+      "voterServices": "",
+      "startDate": "2020-02-18",
+      "endDate": "2020-03-02",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "line1": "5025 S State St (100 E)",
+        "city": "Murray",
+        "state": "UT",
+        "zip": "84107"
+      },
+      "notes": "",
+      "pollingHours": "02/26/2020 02:00 PM to 06:00 PM<br>02/27/2020 02:00 PM to 06:00 PM<br>02/28/2020 02:00 PM to 06:00 PM<br>03/02/2020 02:00 PM to 06:00 PM<br>",
+      "name": "Murray City Hall (EV) PM",
+      "voterServices": "",
+      "startDate": "2020-02-26",
+      "endDate": "2020-03-02",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "mailOnly": true
+}

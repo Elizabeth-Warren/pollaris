@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c0 {
+  color: inherit;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 72px;
+  font-weight: bold;
+  -webkit-letter-spacing: -0.38px;
+  -moz-letter-spacing: -0.38px;
+  -ms-letter-spacing: -0.38px;
+  letter-spacing: -0.38px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.c1 {
+  color: inherit;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.c2 {
+  color: inherit;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.c3 {
+  color: inherit;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.c4 {
+  color: inherit;
+  font-family: 'Ringside Compressed A','Ringside Compressed B','Helvetica',sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 110px;
+    -webkit-letter-spacing: -0.9px;
+    -moz-letter-spacing: -0.9px;
+    -ms-letter-spacing: -0.9px;
+    letter-spacing: -0.9px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 72px;
+    -webkit-letter-spacing: -0.38px;
+    -moz-letter-spacing: -0.38px;
+    -ms-letter-spacing: -0.38px;
+    letter-spacing: -0.38px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 36px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 26px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 22px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+  }
+}
+
+<div>
+  <h1
+    className="c0"
+    size="xl"
+  >
+    XL: 
+    Hello world
+  </h1>
+  <h1
+    className="c1"
+    size="lg"
+  >
+    LG: 
+    Hello world
+  </h1>
+  <h1
+    className="c2"
+    size="md"
+  >
+    MD: 
+    Hello world
+  </h1>
+  <h1
+    className="c3"
+    size="sm"
+  >
+    SM: 
+    Hello world
+  </h1>
+  <h1
+    className="c4"
+    size="xs"
+  >
+    XS: 
+    Hello world
+  </h1>
+</div>
+`;

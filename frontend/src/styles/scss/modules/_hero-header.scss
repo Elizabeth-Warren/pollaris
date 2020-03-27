@@ -1,0 +1,110 @@
+@import "../helpers/index";
+
+.hero-header {
+  background: $blue url(#{$publicPath}/images/halftone-bg-pattern.svg) center center no-repeat;
+  background-size: 850px;
+  margin-bottom: 35px;
+  position: relative;
+
+  @media #{$tablet-up} {
+    background-size: cover;
+    margin-bottom: 80px;
+
+    &::before {
+      background-color: $white;
+      content: "";
+      display: block;
+      height: 285px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
+.hero-header__image {
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 180px;
+  position: relative;
+
+  @media #{$tablet-up} {
+    min-height: 470px;
+  }
+}
+
+.hero-header__text {
+  left: 35px;
+  padding-left: 18px;
+  position: absolute;
+  top: 40px;
+
+  &::before {
+    background-color: $red;
+    content: "";
+    display: block;
+    height: calc(100% - 2px);
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 5px;
+  }
+
+  @media #{$tablet-up} {
+    left: 70px;
+    padding-left: 28px;
+    top: 108px;
+
+    &::before {
+      bottom: -3px;
+      width: 7px;
+    }
+  }
+}
+
+.hero-header__title {
+  @include type-1(
+    $color: $blue,
+    $sm-size: 46px,
+    $lg-size: 110px);
+
+  line-height: 0.75;
+  text-transform: uppercase;
+
+  @media #{$tablet-up} {
+    line-height: 0.7;
+  }
+}
+
+.hero-header__title--sm {
+  @include type-1(
+    $color: $blue,
+    $sm-size: 22px,
+    $lg-size: 40px);
+
+    display: block;
+    margin-left: 1px;
+
+    @media #{$tablet-up} {
+      margin-left: 4px;
+    }
+}
+
+.hero-header__intro {
+  @include type-std(
+    $sm-size: 18px,
+    $lg-size: 26px,
+    $color: $white
+  );
+
+  line-height: 1.27;
+  padding: 35px;
+
+  @media #{$tablet-up} {
+    line-height: 1.35;
+    padding: 56px 20% 66px;
+    text-align: center;
+  }
+
+}

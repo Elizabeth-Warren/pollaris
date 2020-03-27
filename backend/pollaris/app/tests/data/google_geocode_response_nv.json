@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "425",
+          "short_name": "425",
+          "types": ["street_number"]
+        },
+        {
+          "long_name": "Warmside Drive",
+          "short_name": "Warmside Dr",
+          "types": ["route"]
+        },
+        {
+          "long_name": "Summerlin",
+          "short_name": "Summerlin",
+          "types": ["neighborhood", "political"]
+        },
+        {
+          "long_name": "Las Vegas",
+          "short_name": "Las Vegas",
+          "types": ["locality", "political"]
+        },
+        {
+          "long_name": "Clark County",
+          "short_name": "Clark County",
+          "types": ["administrative_area_level_2", "political"]
+        },
+        {
+          "long_name": "Nevada",
+          "short_name": "NV",
+          "types": ["administrative_area_level_1", "political"]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": ["country", "political"]
+        },
+        {
+          "long_name": "89145",
+          "short_name": "89145",
+          "types": ["postal_code"]
+        },
+        {
+          "long_name": "5373",
+          "short_name": "5373",
+          "types": ["postal_code_suffix"]
+        }
+      ],
+      "formatted_address": "425 Warmside Dr, Las Vegas, NV 89145, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 36.1674542,
+            "lng": -115.2446351
+          },
+          "southwest": {
+            "lat": 36.1673638,
+            "lng": -115.2448797
+          }
+        },
+        "location": {
+          "lat": 33.0,
+          "lng": -113.0
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 36.1687579802915,
+            "lng": -115.2434084197085
+          },
+          "southwest": {
+            "lat": 36.1660600197085,
+            "lng": -115.2461063802915
+          }
+        }
+      },
+      "place_id": "ChIJf52LhfjAyIARS4_GbP6QmPA",
+      "types": ["premise"]
+    }
+  ],
+  "status": "OK"
+}
