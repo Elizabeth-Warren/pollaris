@@ -77,7 +77,8 @@ const Header4 = styled.h4`
 
 const Header5 = styled.h5`
   ${baseHeaderStyles}
-  ${({ theme }) => theme.fonts.wideBold}
+  ${({ theme }) => theme.fonts.extraWide}
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.86px;
   line-height: 1.17;

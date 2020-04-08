@@ -28,18 +28,6 @@
   font-weight: 700;
 }
 
-@mixin wide-light {
-  font-family: "Ringside Wide A", "Ringside Wide B";
-  font-style: normal;
-  font-weight: 300;
-}
-
-@mixin wide-bold {
-  font-family: "Ringside Wide A", "Ringside Wide B";
-  font-style: normal;
-  font-weight: 700;
-}
-
 @mixin extra-wide-black {
   font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B";
   font-style: normal;

@@ -79,7 +79,7 @@
   $color: $body-color,
   $sm-size: 12px,
   $lg-size: 12px) {
-  @include wide-bold;
+  @include extra-wide-black;
 
   color: $color;
   font-size: $sm-size;
@@ -96,7 +96,7 @@
   $color: $body-color,
   $sm-size: 12px,
   $lg-size: 12px) {
-  @include wide-light;
+  @include reg-book;
 
   color: $color;
   font-size: $sm-size;

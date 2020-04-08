@@ -18,20 +18,6 @@ const GlobalSiteStyles = createGlobalStyle`
   */
 
   @font-face {
-    font-family: 'Ringside Wide A';
-    src: url('https://cdn.elizabethwarren.com/_public/fonts/RingsideWide-Light_Web.woff2') format('woff2'), url('https://cdn.elizabethwarren.com/_public/fonts/RingsideWide-Light_Web.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Ringside Wide A';
-    src: url('https://cdn.elizabethwarren.com/_public/fonts/RingsideWide-Bold_Web.woff2') format('woff2'), url('https://cdn.elizabethwarren.com/_public/fonts/RingsideWide-Bold_Web.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  @font-face {
     font-family: 'Ringside Regular A';
     src: url('https://cdn.elizabethwarren.com/_public/fonts/RingsideRegular-Book_Web.woff2') format('woff2'), url('https://cdn.elizabethwarren.com/_public/fonts/RingsideRegular-Book_Web.woff') format('woff');
     font-weight: 400;
