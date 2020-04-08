@@ -60,16 +60,6 @@ const fonts = {
     font-style: normal;
     font-weight: 700;
   `,
-  wideLight: css`
-    font-family: 'Ringside Wide A', 'Ringside Wide B';
-    font-style: normal;
-    font-weight: 300;
-  `,
-  wideBold: css`
-    font-family: 'Ringside Wide A', 'Ringside Wide B';
-    font-style: normal;
-    font-weight: 700;
-  `,
   extraWide: css`
     font-family: 'Ringside Extra Wide SSm A', 'Ringside Extra Wide SSm B';
     font-style: normal;
