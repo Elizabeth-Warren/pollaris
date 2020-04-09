@@ -5,3 +5,14 @@ Pollaris is an app to help people find their polling locations. Users can look u
 The app is built with a Django and Postgres backend and Gatsby.js, React, and Contentful on the frontend.
 
 See more details in the READMEs and code for [backend](backend) and [frontend](frontend).
+
+Some screenshots of Pollaris in action:
+
+Search box:
+![search box](screenshots/pollaris_screenshot1.png)
+
+Results with multiple caucus/voting options:
+![multiple options](screenshots/pollaris_screenshot2.png)
+
+Results with one option:
+![single option](screenshots/pollaris_screenshot3.png)
