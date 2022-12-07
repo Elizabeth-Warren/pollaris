@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
-    "serverless": "^1.60.5",
+    "serverless": "^3.25.1",
     "serverless-associate-waf": "^1.1.1",
     "serverless-domain-manager": "^3.3.1",
     "serverless-plugin-aws-alerts": "^1.4.0",
